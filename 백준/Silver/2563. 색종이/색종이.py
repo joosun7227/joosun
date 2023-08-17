@@ -1,21 +1,18 @@
-paper = [[0 for _ in range(100)] for _ in  range(100)]
-# print(paper)
-
-# 색종이수 입력
+# 색종이수 N입력받음
 N = int(input())
+# 도화지 생성
+paper = [[0 for m in range(100)] for l in range(100)]
 
-# 색종이 위치
+# for 문안에 색종이 붙이기
 for i in range(N):
-  left,bottom = map(int,input().split())
-  for y in range(bottom,bottom+10):
-    for x in  range(left,left+10):
-      paper[y][x] = 1 #왜 페이퍼 yx인가
+    x,y = map(int,input().split())
+    for j in range(x,x+10):
+        for k in range(y,y+10):
+          paper[j][k] = 1
 
-result = 0
-for i in range(len(paper)) :
-  for k in range(len(paper[i])) :
-    if paper[i][k] == 1:
-      result += 1
+count = 0
+for a in range(100):
+   for b in range(100):
+      count = count + paper[a][b] 
 
-print(result)
-    
+print(count)
