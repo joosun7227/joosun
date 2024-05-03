@@ -1,0 +1,7 @@
+<resources>
+    <string name="default_url">https://www.dalrat.com/shop</string>
+    <string name="user_agent">dalrat_app_android</string>
+    <string name="js_name">MyApp</string>
+
+    <string name="app_name">Dalrat</string>
+</resources>
