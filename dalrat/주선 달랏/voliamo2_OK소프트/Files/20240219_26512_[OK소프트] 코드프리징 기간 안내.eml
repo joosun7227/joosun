@@ -1,0 +1,75 @@
+ARC-Seal: i=1; a=rsa-sha256; d=naver.com; s=arc-20180730; t=1708314369;
+	cv=none; b=poGtZ3Qu/AzIxn3DDxnprIoCoTEwPJr32bPBaligXZ/zVavqoXEnuxrfCZi/
+	 FRrJ2GaJlOErk1oI6jxmJ1n/cTrH6ICPJ62EPQ1OuXWwsqOn1tv8bXs+VtXJn2qrpfCtHr
+	 tWS5yECJZLKvkbQFOg5GRCgsi46ywAcjlrtUYwhiMcKSDodTZVHAzp9jrgJIkWvn1tW79n
+	 00q6HuHcEm8pRpbAXNfl1H9MMRBkB+j33yj1CYATdKE4XLVE3Hsm6Vp1IB53VjI2o686UN
+	 clV8x7RBswxbVlW7lUW5DiBGkL37j9KSIA+U9xuaOE82ZSiZIt76bQok6zU5e9Fn7/z75q
+	 og==
+ARC-Message-Signature: i=1; a=rsa-sha256; d=naver.com; s=arc-20180730;
+	t=1708314369; c=relaxed/relaxed;
+	bh=irodUey4/IJnqK8lhlWjSvBkGND1Y8y6OX9WKCs4XZg=;
+	h=message-id:from:to:subject:date; b=rzI9amBkXWnyyKkoRUIdyHshNX8CNXmezz
+	 fgL7kUe0gqUyn1DwcyY9na214TZ9XYLj/DyMhMjOFqPVg+FMDZRIQNv1hC7LECyANSzHJY
+	 ftuEqMTcqcUDSWThidVDY4MzoK2bMOpK1rBnw3YDFvxVJZYU+EzmRyeA/UG31OoJE/dqh/
+	 p1LBIvEnIVdglOaHLZLQ7LMvYeCDPO5Aq0s9O7un2HypVTE0eMcdcafUhnph6XdKlCSNlM
+	 O2MVeGg4cFzSFhUl0E6E3pPrtGw+l65Yvf9l8K2DEDs0mkJgPkGyLd8Yk8pChAhtD0lAnZ
+	 vKXA9j0xqHj4CZcOZbcUPAUJqA8g==
+ARC-Authentication-Results: i=1; mx.naver.com; 
+  spf=pass (mx.naver.com: domain of junghozin@ok-sft.com designates 211.43.203.227 as permitted sender) smtp.mailfrom=junghozin@ok-sft.com
+Return-Path: <junghozin@ok-sft.com>
+Received-SPF: pass (mx.naver.com: domain of junghozin@ok-sft.com designates 211.43.203.227 as permitted sender)
+  client-ip=211.43.203.227; x-iptype=default;
+Authentication-Results: mx.naver.com;
+  spf=pass (mx.naver.com: domain of junghozin@ok-sft.com designates 211.43.203.227 as permitted sender) smtp.mailfrom=junghozin@ok-sft.com
+X-Naver-ESV: w9Fn+6J4p63qMBIYKBwdbXmmKqtrKACYkXm=
+X-Session-IP: 211.43.203.227
+Received: from smtp227.hiworks.co.kr (smtp227.hiworks.co.kr [211.43.203.227])
+  by crcvmail306.nm.naver.com with ESMTP id KeLb4biUQw2STzMBTmN6xw
+  for <voliamo2@naver.com>
+  (version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384);
+  Mon, 19 Feb 2024 03:46:08 -0000
+Received: (qmail 80288 invoked from network); 19 Feb 2024 12:46:07 +0900
+Received: from unknown (HELO spam113.gabia.com) (211.43.212.102)
+	by 0 (qmail 1.03 + ejcp v14) with SMTP;
+	19 Feb 2024 12:46:07 +0900
+Received: from unknown (HELO smtp1.hiworks.co.kr) (121.254.168.204)
+	by 211.43.212.102 with ESMTP; 19 Feb 2024 12:46:07 +0900
+X-Original-SENDERIP: 121.254.168.204
+X-Original-SENDERCOUNTRY: KR, Korea, Republic of
+X-Original-MAILFROM: junghozin@ok-sft.com
+X-Original-RCPTTO: voliamo2@naver.com
+Received: (qmail 99994 invoked from network); 19 Feb 2024 12:46:07 +0900
+Received: from unknown (HELO hiworks.co.kr) (192.168.10.180)
+	by 0 (qmail 1.03 + ejcp v14) with SMTP;
+	19 Feb 2024 12:46:07 +0900
+Received: (qmail 62244 invoked from network); 19 Feb 2024 12:46:07 +0900
+Received: from unknown (HELO mailw13) (junghozin@ok-sft.com@117.53.116.204)
+	by 0 (qmail 1.03 + ejcp v14) with AES256-GCM-SHA384 encrypted SMTPS;
+	19 Feb 2024 12:46:07 +0900
+X-Authinfo: HIWORKS SMTP authenticated <junghozin@ok-sft.com|117.53.116.204|junghozin@ok-sft.com|240219124607_236062243>
+X-MailFrom-INFO: Info <country_code:KR|rbl_level:0>
+Message-Id: <88d5cb28a956e0906f7c93ad9445ee7f$c51f7660@mail3.nate.com>
+From: "=?UTF-8?B?7KCV7Zi47KeE?=" <junghozin@ok-sft.com>
+To: "=?UTF-8?B?7JiI7KO864KY6528KOyjvCk=?=" <voliamo2@naver.com>
+Subject: =?UTF-8?B?W09L7IaM7ZSE7Yq4XSDsvZTrk5ztlITrpqzsp5Ug6riw6rCEIOyViA==?=
+	=?UTF-8?B?64K0?=
+Date: Mon, 19 Feb 2024 12:46:07 +0900
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+X-Mailer: Nate MIME interface v1.0
+X-MailerKey: NTguMjI0LjEzNy4xNTk=
+Content-Transfer-Encoding: base64
+X-Nate-UUID: 9cc5ace747f730f3674fef4b4bc769c5:1
+X-Nate-Key: 88d5cb28a956e0906f7c93ad9445ee7f$c51f7660@mail3.nate.com
+
+PGRpdiBjbGFzcz0id2Nfd3JhcHBlciIgc3R5bGU9ImZvbnQtZmFtaWx5OuunkeydgCDqs6DrlJU7
+Zm9udC1zaXplOjEwcHQiPuyViOuFle2VmOyEuOyalC4gT0vshoztlITtirgg7KCV7Zi47KeE7J6F
+64uI64ukLjxkaXY+PGJyPjwvZGl2PjxkaXY+Mi8yMyB+Mi8yOSDsnbzquYzsp4Ag7L2U65OcIO2U
+hOumrOynleq4sOqwhCDsnoXri4jri6QuPC9kaXY+PGRpdj7quLTquIkg7J6l7JWgLCDrsoTqt7gg
+7J207Jm47JeQ64qUIOy9lOuTnOulvCDrsLDtj6zrsI8g6rCc67Cc7J2EIOynhO2Wie2VmOyngCDs
+lYrsirXri4jri6QuPC9kaXY+PGRpdj48YnI+PC9kaXY+PGRpdj7qsJDsgqztlanri4jri6QuPC9k
+aXY+PGRpdj48YnI+PC9kaXY+PC9kaXY+PGltZyBzcmM9Imh0dHBzOi8vbWFpbDMubmF0ZS5jb20v
+YXBwL21zZy9jb25maXJtLz91c249MTIwOTE1MDYmZW1haWw9bWVnYXJvY2szQG5hdGUuY29tJmtl
+eT04OGQ1Y2IyOGE5NTZlMDkwNmY3YzkzYWQ5NDQ1ZWU3ZiRjNTFmNzY2MEBtYWlsMy5uYXRlLmNv
+bSIgaGVpZ2h0PSIxIiB3aWR0aD0iMSIgYWx0PSIiIC8+
+

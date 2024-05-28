@@ -1,0 +1,1506 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>메일 백업 파일</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .blind {
+            position: absolute;
+            clip: rect(0 0 0 0);
+        }
+
+        .wrap {
+            max-width: 1164px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            line-height: 0;
+            padding: 40px 0 28px;
+            margin: 0;
+        }
+
+        .lineworks:before {
+            content: '';
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='120' height='17' viewBox='0 0 120 17'%3E%3Cdefs%3E%3Cpath id='prefix__a' d='M0.302 0.017L14.767 0.017 14.767 13.6 0.302 13.6z'/%3E%3Cpath id='prefix__c' d='M0 0.327L9.27 0.327 9.27 13.282 0 13.282z'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%2300C73C' d='M62.68.707h-2.22c-.205 0-.387.128-.444.315l-2.295 8.02-2.296-8.02c-.057-.187-.238-.315-.444-.315h-2.492c-.206 0-.387.128-.444.315l-2.285 8.02-2.306-8.02c-.058-.187-.239-.315-.445-.315h-2.22c-.308 0-.53.279-.444.558l3.715 12.082c.057.186.238.315.444.315h2.49c.206 0 .387-.129.444-.315l2.297-7.469 2.296 7.469c.058.186.239.315.445.315h2.49c.206 0 .387-.129.444-.315l3.715-12.082c.086-.28-.136-.558-.444-.558' transform='translate(1 1)'/%3E%3Cg transform='translate(1 1) translate(62.955 .383)'%3E%3Cmask id='prefix__b' fill='%23fff'%3E%3Cuse xlink:href='%23prefix__a'/%3E%3C/mask%3E%3Cpath fill='%2300C73C' d='M7.534 10.6c-2.078 0-3.762-1.698-3.762-3.792 0-2.093 1.684-3.79 3.762-3.79 2.078 0 3.762 1.697 3.762 3.79 0 2.094-1.684 3.791-3.762 3.791m0-10.582C3.54.017.302 3.057.302 6.808c0 3.751 3.237 6.792 7.232 6.792s7.233-3.04 7.233-6.792c0-3.75-3.238-6.79-7.233-6.79' mask='url(%23prefix__b)'/%3E%3C/g%3E%3Cpath fill='%2300C73C' d='M84.13 6.421h-1.765V3.32h1.765c1.397 0 2.113.72 2.113 1.55 0 1.519-1.928 1.551-2.113 1.551zm2.641 2.123c1.497-.664 2.644-1.963 2.644-3.673 0-2.646-2.365-4.166-5.305-4.167h-4.376c-.31 0-.56.236-.56.526v11.903c0 .29.25.526.56.526h2.071c.31 0 .56-.236.56-.526V9.036h1.1l2.45 4.344c.098.171.288.279.495.279h2.972c.173 0 .283-.175.199-.318l-2.81-4.797zM98.148 7.05l3.957-6.013c.095-.146-.016-.333-.197-.333H99.07c-.193 0-.373.094-.475.249l-3.185 4.82h-1.034V1.231c0-.291-.251-.527-.56-.527h-2.051c-.309 0-.56.236-.56.527v11.902c0 .29.251.526.56.526h2.05c.31 0 .56-.236.56-.526V8.591h1.056l3.296 4.826c.103.15.28.242.471.242h3.02c.182 0 .293-.19.194-.335L98.148 7.05zM109.655 6.01c-3.017-.802-3.083-1.401-3.083-1.819 0-.459.369-1.135 1.725-1.135 1.144 0 2.091.465 2.808 1.04.222.177.548.167.755-.025l1.29-1.198c.213-.198.226-.518.024-.726-.599-.62-2.071-1.745-4.87-1.745-1.764 0-4.858 1.071-4.858 3.87 0 3.552 4.134 3.895 5.61 4.488 1.603.643 1.248 1.416 1.159 1.737-.104.378-.938 1.02-2.643.764-1.093-.163-1.868-.686-2.284-1.04-.214-.183-.546-.17-.754.02l-1.357 1.23c-.218.199-.232.524-.027.734.613.625 2.126 1.758 5.04 1.758 4.026 0 5.432-2.449 5.432-4.075 0-1.545-.876-3.055-3.967-3.877M13.633.71h-2.064c-.305 0-.552.233-.552.52v11.915c0 .287.247.52.552.52h2.064c.305 0 .553-.233.553-.52V1.23c0-.287-.248-.52-.553-.52' transform='translate(1 1)'/%3E%3Cg transform='translate(1 1) translate(0 .383)'%3E%3Cmask id='prefix__d' fill='%23fff'%3E%3Cuse xlink:href='%23prefix__c'/%3E%3C/mask%3E%3Cpath fill='%2300C73C' d='M8.711 10.302H3.169V.854c0-.291-.25-.527-.56-.527H.56C.25.327 0 .563 0 .854v11.902c0 .29.251.526.56.526h8.152c.31 0 .56-.235.56-.526v-1.928c0-.29-.25-.526-.56-.526' mask='url(%23prefix__d)'/%3E%3C/g%3E%3Cpath fill='%2300C73C' d='M38.894.71h-8.152c-.308 0-.559.236-.559.526V13.14c0 .29.25.526.56.526h8.151c.309 0 .56-.236.56-.526V11.21c0-.29-.251-.526-.56-.526h-5.542V8.678h5.542c.309 0 .56-.235.56-.526V6.224c0-.291-.251-.527-.56-.527h-5.542V3.671h5.542c.309 0 .56-.236.56-.527V1.236c0-.29-.251-.526-.56-.526M27.64.71h-2.072c-.309 0-.56.236-.56.526v7.05L19.249.949c-.1-.144-.273-.239-.469-.239h-2.071c-.31 0-.56.236-.56.526V13.14c0 .29.25.526.56.526h2.071c.309 0 .56-.236.56-.526V6.065l5.796 7.406c.103.118.259.194.433.194h2.072c.31 0 .56-.236.56-.526V1.236c0-.29-.25-.526-.56-.526' transform='translate(1 1)'/%3E%3C/g%3E%3C/svg%3E%0A");
+            display: inline-block;
+            width: 120px;
+            height: 17px;
+            vertical-align: top;
+        }
+
+        .naver:before {
+            content: '';
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='75' height='17' viewBox='0 0 75 17'%3E%3Cdefs%3E%3Cpath id='prefix__a' d='M0.137 0L13.451 0 13.451 14 0.137 14z'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%2303CF5D' d='M21 0l-5.49 14h4.667l.662-1.853h5.263L26.765 14h4.666l-5.49-14H21zm2.47 4.411l1.566 4.373h-3.13l1.564-4.373zM46.392 0L46.392 14 57.441 14 57.441 10.569 50.853 10.569 50.853 8.681 57.235 8.681 57.235 5.319 50.853 5.319 50.853 3.431 57.304 3.431 57.304 0zM40.284 0L36.99 9.205 33.696 0 29.029 0 34.52 14 39.461 14 44.951 0zM9.539 0L9.539 7.493 4.324 0 0 0 0 14 4.529 14 4.529 6.507 9.745 14 14.069 14 14.069 0z' transform='translate(1 1)'/%3E%3Cg transform='translate(1 1) translate(59.5)'%3E%3Cmask id='prefix__b' fill='%23fff'%3E%3Cuse xlink:href='%23prefix__a'/%3E%3C/mask%3E%3Cpath fill='%2303CF5D' d='M6.863 6.52H4.46V3.569h2.402c.815 0 1.475.66 1.475 1.475 0 .815-.66 1.476-1.475 1.476zM9.91 9.197l.425-.178c1.627-.68 2.455-2.154 2.455-4.024 0-1.769-.645-3.077-1.918-3.889C9.691.352 8.157 0 6.047 0H.137v14H4.53v-3.912h1.579L8.784 14h4.667l-3.54-4.803z' mask='url(%23prefix__b)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+            display: inline-block;
+            width: 75px;
+            height: 17px;
+            vertical-align: top;
+        }
+
+        .works:before {
+            content: '';
+            background-image: url("data:image/svg+xml,%3Csvg width='67' height='14' viewBox='0 0 134 28' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E4D1B7076-8ED7-4F64-A366-65237471B0E3%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='1-3.-Icon' transform='translate(-1068.000000, -7489.000000)' fill='%2303C75A' fill-rule='nonzero'%3E%3Cg id='Group-17' transform='translate(100.000000, 7265.000000)'%3E%3Cg id='Group-16' transform='translate(0.000000, 138.000000)'%3E%3Cg id='bi_ncs_single' transform='translate(968.000000, 86.000000)'%3E%3Cpath d='M50.5922112,0 C58.3161433,0 64.5775743,6.2682808 64.5775743,14.0005247 C64.5775743,21.7317192 58.3161433,28 50.5922112,28 C42.8682791,28 36.6058011,21.7317192 36.6058011,14.0005247 C36.6058011,6.2682808 42.8682791,0 50.5922112,0 Z M123.715382,0.00409280012 C129.127788,0.00409280012 131.975321,2.3233462 133.133178,3.60155916 C133.52262,4.03182789 133.499588,4.68982422 133.086068,5.09910423 L133.086068,5.09910423 L130.592383,7.56842697 C130.191425,7.96511375 129.561199,7.9840036 129.133022,7.61775046 C127.746944,6.43398673 125.914892,5.47585173 123.70282,5.47585173 C121.079321,5.47585173 120.367438,6.86950264 120.367438,7.81714329 C120.367438,7.83305973 120.367482,7.84910502 120.367605,7.86527942 L120.369577,7.96387753 C120.399242,8.81516981 120.819286,10.0037596 126.329459,11.5667779 C132.304043,13.2616169 134,16.3752933 134,19.5603313 C134,22.9111802 131.280188,27.9589671 123.495536,27.9589671 C117.859097,27.9589671 114.935141,25.6250216 113.750065,24.3352648 C113.352248,23.9018478 113.37842,23.2333571 113.801363,22.8240771 L113.801363,22.8240771 L116.424861,20.2854915 C116.82896,19.8951014 117.469655,19.8688655 117.885269,20.2466624 C118.689278,20.9770698 120.187373,22.0527417 122.298944,22.39066 C125.597685,22.9174769 127.209891,21.5930887 127.410893,20.8154567 C127.582583,20.1532626 128.270388,18.5612683 125.169508,17.2326824 C122.316741,16.0121884 114.322712,15.3059181 114.322712,7.98295416 C114.322712,2.21315543 120.305671,0.00409280012 123.715382,0.00409280012 Z M5.18788538,0.632704921 C5.58570243,0.632704921 5.93640957,0.897162775 6.04737959,1.28230576 L6.04737959,1.28230576 L10.5071181,17.8140699 L14.9249812,1.28230576 C15.0349043,0.897162775 15.3856114,0.632704921 15.7834285,0.632704921 L15.7834285,0.632704921 L20.6032962,0.632704921 C21.0011132,0.632704921 21.3518203,0.897162775 21.4627904,1.28230576 L21.4627904,1.28230576 L25.9015912,17.8140699 L30.3393451,1.28230576 C30.451362,0.897162775 30.8010222,0.632704921 31.1988393,0.632704921 L31.1988393,0.632704921 L35.4921228,0.632704921 C36.0878015,0.632704921 36.5170251,1.20779581 36.3505701,1.78393613 L36.3505701,1.78393613 L29.1678785,26.6891496 C29.0569085,27.0742926 28.7072483,27.3387504 28.3094312,27.3387504 L28.3094312,27.3387504 L23.4937511,27.3387504 C23.0948872,27.3387504 22.7452269,27.0742926 22.6342569,26.6891496 L22.6342569,26.6891496 L18.1933623,11.2928751 L13.7524678,26.6891496 C13.6414977,27.0742926 13.2918375,27.3387504 12.8940204,27.3387504 L12.8940204,27.3387504 L8.07729344,27.3387504 C7.67947639,27.3387504 7.32981614,27.0742926 7.21884612,26.6891496 L7.21884612,26.6891496 L0.0361545525,1.78393613 C-0.130300477,1.20779581 0.298923184,0.632704921 0.894601876,0.632704921 L0.894601876,0.632704921 Z M76.9306313,0.628087403 C82.6173214,0.628087403 87.1901237,3.76380196 87.1901237,9.21667104 C87.1901237,12.7417263 84.9728171,15.4188374 82.0771277,16.7883513 L82.0771277,16.7883513 L87.5104711,26.6782354 C87.6727386,26.9731269 87.4602206,27.3330835 87.1241699,27.3330835 L87.1241699,27.3330835 L81.3788541,27.3330835 C80.9778964,27.3330835 80.611486,27.1116525 80.4230463,26.7569431 L80.4230463,26.7569431 L75.6827421,17.8031558 L73.5565146,17.8031558 L73.5565146,26.2490162 C73.5565146,26.8471946 73.0718059,27.3330835 72.4740335,27.3330835 L72.4740335,27.3330835 L68.4686439,27.3330835 C67.8708714,27.3330835 67.3861627,26.8471946 67.3861627,26.2490162 L67.3861627,26.2490162 L67.3861627,1.71215472 C67.3861627,1.1129268 67.8708714,0.628087403 68.4686439,0.628087403 L68.4686439,0.628087403 Z M95.6998492,0.628507177 C96.2965748,0.628507177 96.7812835,1.11334658 96.7812835,1.71257449 L96.7812835,1.71257449 L96.7812835,11.0766913 L98.7818845,11.0766913 L104.940721,1.13958247 C105.138582,0.821603388 105.486149,0.628507177 105.859887,0.628507177 L105.859887,0.628507177 L111.346622,0.628507177 C111.697329,0.628507177 111.911941,1.01365016 111.727689,1.3127394 L111.727689,1.3127394 L104.077039,13.7086766 L112.323368,26.6429744 C112.513901,26.9410142 112.299289,27.3324538 111.946488,27.3324538 L111.946488,27.3324538 L106.106953,27.3324538 C105.738448,27.3324538 105.396116,27.1446048 105.196161,26.8339717 L105.196161,26.8339717 L98.82376,16.8842697 L96.7812835,16.8842697 L96.7812835,26.2483865 C96.7812835,26.8476144 96.2965748,27.3324538 95.6998492,27.3324538 L95.6998492,27.3324538 L91.7342414,27.3324538 C91.1364689,27.3324538 90.6528071,26.8476144 90.6528071,26.2483865 L90.6528071,26.2483865 L90.6528071,1.71257449 C90.6528071,1.11334658 91.1364689,0.628507177 91.7342414,0.628507177 L91.7342414,0.628507177 Z M50.5922112,6.1864248 C46.574259,6.1864248 43.3163467,9.68419475 43.3163467,14.0005247 C43.3163467,18.3158053 46.574259,21.8146246 50.5922112,21.8146246 C54.6091165,21.8146246 57.8670288,18.3158053 57.8670288,14.0005247 C57.8670288,9.68419475 54.6091165,6.1864248 50.5922112,6.1864248 Z M76.9693661,6.01903977 L73.5565146,6.01903977 L73.5565146,12.4132529 L77.0023519,12.4130821 C77.5104745,12.4080319 81.055366,12.2688767 81.055366,9.21667104 C81.055366,7.5039916 79.6713814,6.01903977 76.9693661,6.01903977 L76.9693661,6.01903977 Z' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 67px;
+            height: 14px;
+            vertical-align: top;
+        }
+
+        .naverworks:before {
+            content: '';
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='148' height='14' viewBox='0 0 211 20'%3E\a     %3Cg fill='none' fill-rule='evenodd'%3E\a         %3Cg fill='%2303C75A' fill-rule='nonzero'%3E\a             %3Cg%3E\a                 %3Cg%3E\a                     %3Cpath d='M142.855 0c5.718 0 10.198 4.369 10.198 9.946V10c0 5.607-4.503 10-10.252 10-5.718 0-10.198-4.37-10.198-9.946V10c0-5.607 4.504-10 10.252-10zm59.656 0c3.183 0 5.773.839 7.92 2.564l.103.083-2.795 3.954-.115-.08c-1.698-1.196-3.562-1.854-5.249-1.854-1.087 0-1.763.416-1.763 1.084v.055c0 .732.48 1.1 3.181 1.714 4.325.942 7.207 2.336 7.207 6.076v.054c0 3.917-3.003 6.35-7.837 6.35-3.514 0-6.714-1.135-9.011-3.195l-.102-.091 3.112-3.724.108.086c1.876 1.498 3.923 2.257 6.084 2.257 1.293 0 2.035-.425 2.035-1.166v-.054c0-.657-.464-1.077-3.1-1.688-3.84-.877-7.287-2.007-7.287-6.13v-.053c0-3.734 3.018-6.242 7.51-6.242zM89.165.462c2.87 0 4.957.479 6.565 1.507 1.731 1.106 2.608 2.889 2.608 5.299 0 2.548-1.125 4.555-3.339 5.483l-.578.242 4.816 6.544h-6.349l-3.64-5.33H87.1v5.33l-5.974.001V.462zm74.268 0c2.87 0 4.957.479 6.565 1.507 1.731 1.106 2.608 2.889 2.608 5.299 0 2.548-1.125 4.555-3.338 5.483l-.578.242 4.815 6.544h-6.348l-3.641-5.33h-2.147v5.33l-5.975.001V.462zm-128.145 0l7.468 19.075h-6.348l-.902-2.524h-7.158l-.902 2.524h-6.348L28.567.463h6.721zm42.663 0v4.676h-8.775v2.57h8.682v4.583h-8.682v2.572h8.962v4.674h-15.03V.463h14.843zm-32.114 0l4.481 12.543L54.8.462h6.349l-7.47 19.076h-6.72L39.488.462h6.348zm-39.955 0l7.094 10.21V.462h6.162v19.075h-5.882L6.162 9.33v10.208H0V.463h5.882zm175.574 0v6.821h1.568l4.4-6.82h6.139l-5.969 9.252 6.728 9.823h-6.14l-5.062-7.392h-1.664v7.392h-5.882V.462h5.882zm-70.928 0l3.112 10.21 2.688-10.21h4.524l2.687 10.21 3.112-10.21h5.763l-6.27 18.981-.03.095h-4.288l-3.223-10.21-.013.041-.013-.041-3.223 10.21h-4.287l-.031-.095-6.27-18.98h5.762zm32.273 4.566c-2.616 0-4.59 2.114-4.59 4.918V10c0 2.788 2.04 4.972 4.644 4.972 2.632 0 4.617-2.115 4.617-4.918V10c0-2.788-2.052-4.972-4.671-4.972zM31.927 6.473l-2.129 5.958h4.258l-2.129-5.958zm58.348-1.15h-3.268v4.022h3.268c1.108 0 2.007-.9 2.007-2.01 0-1.11-.899-2.011-2.007-2.011zm74.268 0h-3.268v4.022h3.268c1.108 0 2.007-.9 2.007-2.01 0-1.11-.899-2.011-2.007-2.011z' transform='translate(-82 -100) translate(16 100) translate(66)'/%3E\a                 %3C/g%3E\a             %3C/g%3E\a         %3C/g%3E\a     %3C/g%3E\a%3C/svg%3E");
+            display: inline-block;
+            background-repeat: no-repeat;
+            width: 148px;
+            height: 14px;
+            vertical-align: top;
+        }
+
+        .title {
+            font-size: 34px;
+            line-height: 40px;
+            color: #222;
+            letter-spacing: -0.5px;
+            margin: 0 0 60px 0;
+        }
+
+        .desc {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #222;
+            margin: 0 0 50px 0;
+        }
+
+        .desc .notice {
+            color: #989898;
+        }
+
+        .download_list {
+            width: 100%;
+            box-sizing: border-box;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .download_list caption {
+            text-align: left;
+            font-size: 18px;
+            color: #222;
+            line-height: 1.5;
+            font-weight: bold;
+            padding: 0 0 11px 0;
+        }
+
+        .download_list caption span {
+            float: right;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #222;
+            font-weight: normal;
+        }
+
+        .download_list caption .cnt {
+            font-style: normal;
+            color: #07b53b;
+        }
+
+        .download_list th,
+        .download_list td {
+            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #222;
+            padding: 13px 0;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .download_list th {
+            background-color: #fafafa;
+        }
+
+        .download_list td {
+            padding: 16px 0 15px;
+        }
+
+        .download_list th+th {
+            border-left: 1px solid #222;
+        }
+
+        .download_list td+td {
+            border-left: 1px solid #222;
+        }
+
+        .download_list td a {
+            color: #157efb;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="wrap">
+    <!-- <h1 class="lineworks"><i class="blind">LINE WORKS</i></h1> -->
+    <!-- <h1 class="naver"><i class="blind">NAVER</i></h1> -->
+    <h1 class="naver"><i class="blind">NAVER</i></h1>
+    <h2 class="title">메일 백업 파일</h2>
+    <p class="desc">
+        메일 서비스에서 다운로드 받은 메일들의 정보를 제공합니다.<br>
+        파일 이름을 클릭하면 운영체제에 설정된 메일 프로그램이 실행되고 선택한 메일의 내용을 확인할 수 있습니다.<br>
+        <span class="notice">※ 이용하는 운영체제에 따라 메일 프로그램이 실행되지 않을 수 있습니다.</span>
+            <br><span class="notice">※ 메일을 백업하는 과정에서 오류가 발생할 경우, eml 파일명이 [보낸사람의 이메일 주소]로 변환되어 저장됩니다.</span>
+            <br><span class="notice">&nbsp;&nbsp;&nbsp;&nbsp;메일 제목은 eml 파일의 본문 내에 그대로 저장되오니 참고해 주세요.</span>
+    </p>
+
+    <table class="download_list">
+        <caption>다운로드 파일 리스트 <span>전체 <em class="cnt">188</em>건</span></caption>
+
+        <!-- 1164 -->
+        <colgroup>
+            <col style="width: 18.9%">
+            <col style="width: 25.9%">
+            <col style="width: 13.85%">
+            <col style="width: 8.75%">
+            <col style="width: auto">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>보낸 사람</th>
+            <th>제목</th>
+            <th>날짜</th>
+            <th>사이즈</th>
+            <th>파일 이름</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- loop -->
+        
+<tr>
+<td>&quot;정호진&quot; &lt;megarock3@nate.com&gt;</td>
+<td>[FOOD] 디자인 시안 컴펌요청</td>
+<td>2023-07-01 16:53</td>
+<td>13MB</td>
+<td><a href="Files/20230701_23501_[FOOD] 디자인 시안 컴펌요청.eml">20230701_23501_[FOOD] 디자인 시안 컴펌요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;김광식&quot; &lt;kwangshik153@naver.com&gt;</td>
+<td>FW: Re:RE: [OK소프트] 국내체류중인 외국인 대상 전자상거래 간이견적및 OK소프트 회사소개서</td>
+<td>2023-04-28 08:44</td>
+<td>57.4KB</td>
+<td><a href="Files/20230428_22980_FW_ Re_RE_ [OK소프트] 국내체류중인 외국인 대상 전자상거래 간이견적및 OK소프트....eml">20230428_22980_FW_ Re_RE_ [OK소프트] 국내체류중인 외국인 대상 전자상거래 간이견적및 OK소프트....eml</a></td>
+</tr>
+<tr>
+<td>&quot;김광식&quot; &lt;kwangshik153@naver.com&gt;</td>
+<td>FW: Re:RE: [OK소프트] 국내체류중인 외국인 대상 전자상거래 간이견적및 OK소프트 회사소개서</td>
+<td>2023-05-02 10:09</td>
+<td>62.5KB</td>
+<td><a href="Files/20230502_23006_FW_ Re_RE_ [OK소프트] 국내체류중인 외국인 대상 전자상거래 간이견적및 OK소프트....eml">20230502_23006_FW_ Re_RE_ [OK소프트] 국내체류중인 외국인 대상 전자상거래 간이견적및 OK소프트....eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[OK소프트] 국내체류중인 외국인 대상 전자상거래 기능 견적</td>
+<td>2023-05-08 16:39</td>
+<td>83.8KB</td>
+<td><a href="Files/20230508_23054_[OK소프트] 국내체류중인 외국인 대상 전자상거래 기능 견적.eml">20230508_23054_[OK소프트] 국내체류중인 외국인 대상 전자상거래 기능 견적.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[OK소프트] 운영중인 쇼핑몰 유지보수 계약관련</td>
+<td>2023-05-10 16:37</td>
+<td>6.4KB</td>
+<td><a href="Files/20230510_23070_[OK소프트] 운영중인 쇼핑몰 유지보수 계약관련.eml">20230510_23070_[OK소프트] 운영중인 쇼핑몰 유지보수 계약관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: [OK소프트] 운영중인 쇼핑몰 유지보수 계약관련</td>
+<td>2023-05-11 15:04</td>
+<td>15.7KB</td>
+<td><a href="Files/20230511_23079_Re_RE_ [OK소프트] 운영중인 쇼핑몰 유지보수 계약관련.eml">20230511_23079_Re_RE_ [OK소프트] 운영중인 쇼핑몰 유지보수 계약관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:RE: [OK소프트] 운영중인 쇼핑몰 유지보수 계약관련</td>
+<td>2023-05-11 20:14</td>
+<td>21.7KB</td>
+<td><a href="Files/20230511_23083_Re_RE_ Re_RE_ [OK소프트] 운영중인 쇼핑몰 유지보수 계약관련.eml">20230511_23083_Re_RE_ Re_RE_ [OK소프트] 운영중인 쇼핑몰 유지보수 계약관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:RE: Re:RE: [OK소프트] 운영중인 쇼핑몰 유지보수 계약관련</td>
+<td>2023-05-12 19:55</td>
+<td>24.3KB</td>
+<td><a href="Files/20230512_23094_Re_RE_ Re_RE_ Re_RE_ [OK소프트] 운영중인 쇼핑몰 유지보수 계약관련.eml">20230512_23094_Re_RE_ Re_RE_ Re_RE_ [OK소프트] 운영중인 쇼핑몰 유지보수 계약관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:RE: Re:RE: Re:RE: [OK소프트] 운영중인 쇼핑몰 유지보수 계약관련</td>
+<td>2023-05-13 18:22</td>
+<td>111.4KB</td>
+<td><a href="Files/20230513_23101_Re_Re_RE_ Re_RE_ Re_RE_ [OK소프트] 운영중인 쇼핑몰 유지보수 계약관련.eml">20230513_23101_Re_Re_RE_ Re_RE_ Re_RE_ [OK소프트] 운영중인 쇼핑몰 유지보수 계약관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[예주나라] 다국어쇼핑몰 웹앱 개발 요청사항</td>
+<td>2023-05-18 16:31</td>
+<td>8.4KB</td>
+<td><a href="Files/20230518_23137_Re_[예주나라] 다국어쇼핑몰 웹앱 개발 요청사항.eml">20230518_23137_Re_[예주나라] 다국어쇼핑몰 웹앱 개발 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:[예주나라] 다국어쇼핑몰 웹앱 개발 요청사항</td>
+<td>2023-05-18 18:09</td>
+<td>12.3KB</td>
+<td><a href="Files/20230518_23140_Re_RE_ Re_[예주나라] 다국어쇼핑몰 웹앱 개발 요청사항.eml">20230518_23140_Re_RE_ Re_[예주나라] 다국어쇼핑몰 웹앱 개발 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:[예주나라] 다국어쇼핑몰 웹앱 개발 요청사항</td>
+<td>2023-05-19 21:42</td>
+<td>14.9KB</td>
+<td><a href="Files/20230519_23152_Re_RE_ Re_[예주나라] 다국어쇼핑몰 웹앱 개발 요청사항.eml">20230519_23152_Re_RE_ Re_[예주나라] 다국어쇼핑몰 웹앱 개발 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:RE: Re:[예주나라] 다국어쇼핑몰 웹앱 개발 요청사항</td>
+<td>2023-05-19 21:45</td>
+<td>16.4KB</td>
+<td><a href="Files/20230519_23153_Re_Re_RE_ Re_[예주나라] 다국어쇼핑몰 웹앱 개발 요청사항.eml">20230519_23153_Re_Re_RE_ Re_[예주나라] 다국어쇼핑몰 웹앱 개발 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:안녕하세요. 예주나라입니다.</td>
+<td>2023-05-23 14:07</td>
+<td>6.6KB</td>
+<td><a href="Files/20230523_23180_Re_안녕하세요. 예주나라입니다..eml">20230523_23180_Re_안녕하세요. 예주나라입니다..eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[OK소프트[ 국내 체류중인 외국인 B2C 웹앱 구축 계약서</td>
+<td>2023-05-24 14:37</td>
+<td>153.2KB</td>
+<td><a href="Files/20230524_23192_[OK소프트[ 국내 체류중인 외국인 B2C 웹앱 구축 계약서.eml">20230524_23192_[OK소프트[ 국내 체류중인 외국인 B2C 웹앱 구축 계약서.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:RE: Re:RE: Re:RE: [OK소프트] 운영중인 쇼핑몰 유지보수 계약관련</td>
+<td>2023-05-30 20:52</td>
+<td>147.2KB</td>
+<td><a href="Files/20230530_23239_Re_Re_Re_RE_ Re_RE_ Re_RE_ [OK소프트] 운영중인 쇼핑몰 유지보수 계....eml">20230530_23239_Re_Re_Re_RE_ Re_RE_ Re_RE_ [OK소프트] 운영중인 쇼핑몰 유지보수 계....eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[OK소프트[ 국내 체류중인 외국인 B2C 웹앱 구축 계약서</td>
+<td>2023-05-30 21:31</td>
+<td>156.8KB</td>
+<td><a href="Files/20230530_23240_Re_[OK소프트[ 국내 체류중인 외국인 B2C 웹앱 구축 계약서.eml">20230530_23240_Re_[OK소프트[ 국내 체류중인 외국인 B2C 웹앱 구축 계약서.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:[OK소프트[ 국내 체류중인 외국인 B2C 웹앱 구축 계약서</td>
+<td>2023-05-31 10:22</td>
+<td>12.8KB</td>
+<td><a href="Files/20230531_23245_Re_RE_ Re_[OK소프트[ 국내 체류중인 외국인 B2C 웹앱 구축 계약서.eml">20230531_23245_Re_RE_ Re_[OK소프트[ 국내 체류중인 외국인 B2C 웹앱 구축 계약서.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:RE: Re:[OK소프트[ 국내 체류중인 외국인 B2C 웹앱 구축 계약서</td>
+<td>2023-06-01 09:57</td>
+<td>164.3KB</td>
+<td><a href="Files/20230601_23253_Re_RE_ Re_RE_ Re_[OK소프트[ 국내 체류중인 외국인 B2C 웹앱 구축 계약서.eml">20230601_23253_Re_RE_ Re_RE_ Re_[OK소프트[ 국내 체류중인 외국인 B2C 웹앱 구축 계약서.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[예주나라] 웹/앱쇼핑몰 개발 작업요청서</td>
+<td>2023-06-12 11:18</td>
+<td>7.7KB</td>
+<td><a href="Files/20230612_23323_Re_[예주나라] 웹_앱쇼핑몰 개발 작업요청서.eml">20230612_23323_Re_[예주나라] 웹_앱쇼핑몰 개발 작업요청서.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[ OK소프트] 6/15일(새벽) 까지 카카오톡 연락이 불가 합니다.</td>
+<td>2023-06-12 17:04</td>
+<td>10.8KB</td>
+<td><a href="Files/20230612_23327_[ OK소프트] 6_15일(새벽) 까지 카카오톡 연락이 불가 합니다..eml">20230612_23327_[ OK소프트] 6_15일(새벽) 까지 카카오톡 연락이 불가 합니다..eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[예주나라] 웹/앱쇼핑몰 개발 작업요청서</td>
+<td>2023-06-13 19:25</td>
+<td>75.6KB</td>
+<td><a href="Files/20230613_23335_Re_[예주나라] 웹_앱쇼핑몰 개발 작업요청서.eml">20230613_23335_Re_[예주나라] 웹_앱쇼핑몰 개발 작업요청서.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:[예주나라] 웹/앱쇼핑몰 개발 작업요청서</td>
+<td>2023-06-15 17:35</td>
+<td>163KB</td>
+<td><a href="Files/20230615_23354_Re_RE_ Re_[예주나라] 웹_앱쇼핑몰 개발 작업요청서.eml">20230615_23354_Re_RE_ Re_[예주나라] 웹_앱쇼핑몰 개발 작업요청서.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>최종계약서 입니다.</td>
+<td>2023-06-16 10:57</td>
+<td>231.7KB</td>
+<td><a href="Files/20230616_23358_최종계약서 입니다..eml">20230616_23358_최종계약서 입니다..eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>FC_V7.0 파일입니다..</td>
+<td>2023-06-20 16:24</td>
+<td>73.5KB</td>
+<td><a href="Files/20230620_23400_FC_V7.0 파일입니다...eml">20230620_23400_FC_V7.0 파일입니다...eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:FC_V7.1 파일입니다..</td>
+<td>2023-06-20 17:36</td>
+<td>75.6KB</td>
+<td><a href="Files/20230620_23401_Re_FC_V7.1 파일입니다...eml">20230620_23401_Re_FC_V7.1 파일입니다...eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:FC_V7.1 파일입니다..</td>
+<td>2023-06-21 14:23</td>
+<td>11KB</td>
+<td><a href="Files/20230621_23410_Re_Re_FC_V7.1 파일입니다...eml">20230621_23410_Re_Re_FC_V7.1 파일입니다...eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>계약서</td>
+<td>2023-06-23 02:12</td>
+<td>152.4KB</td>
+<td><a href="Files/20230623_23427_계약서.eml">20230623_23427_계약서.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:계약서 </td>
+<td>2023-06-23 14:51</td>
+<td>154.4KB</td>
+<td><a href="Files/20230623_23431_Re_계약서 .eml">20230623_23431_Re_계약서 .eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:계약서</td>
+<td>2023-06-23 16:00</td>
+<td>155.5KB</td>
+<td><a href="Files/20230623_23433_Re_Re_계약서.eml">20230623_23433_Re_Re_계약서.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:[예주나라] 웹/앱쇼핑몰 개발 작업요청서</td>
+<td>2023-06-28 12:39</td>
+<td>7.4KB</td>
+<td><a href="Files/20230628_23466_Re_RE_ Re_[예주나라] 웹_앱쇼핑몰 개발 작업요청서.eml">20230628_23466_Re_RE_ Re_[예주나라] 웹_앱쇼핑몰 개발 작업요청서.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td> 웹/앱쇼핑몰 개발을 위한 정보 제공 요청</td>
+<td>2023-06-29 19:27</td>
+<td>12.5KB</td>
+<td><a href="Files/20230629_23488_ 웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml">20230629_23488_ 웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간 업무보고 입니다. </td>
+<td>2023-07-01 16:46</td>
+<td>297.5KB</td>
+<td><a href="Files/20230701_23500_[FOOD] 주간 업무보고 입니다. .eml">20230701_23500_[FOOD] 주간 업무보고 입니다. .eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;megarock3@nate.com&gt;</td>
+<td>Re:[FOOD] 디자인 시안 컴펌요청</td>
+<td>2023-07-01 17:15</td>
+<td>7.7KB</td>
+<td><a href="Files/20230701_23502_Re_[FOOD] 디자인 시안 컴펌요청.eml">20230701_23502_Re_[FOOD] 디자인 시안 컴펌요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[FOOD] 주간 업무보고 입니다.</td>
+<td>2023-07-02 14:24</td>
+<td>10.5KB</td>
+<td><a href="Files/20230702_23510_Re_[FOOD] 주간 업무보고 입니다..eml">20230702_23510_Re_[FOOD] 주간 업무보고 입니다..eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 정산 </td>
+<td>2023-07-02 20:20</td>
+<td>938.1KB</td>
+<td><a href="Files/20230702_23511_[FOOD] 정산 .eml">20230702_23511_[FOOD] 정산 .eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:웹/앱쇼핑몰 개발을 위한 정보 제공 요청</td>
+<td>2023-07-03 14:48</td>
+<td>14.6KB</td>
+<td><a href="Files/20230703_23517_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml">20230703_23517_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 타이 로터리 이벤트 기획문서</td>
+<td>2023-07-03 21:19</td>
+<td>569.3KB</td>
+<td><a href="Files/20230703_23520_[FOOD] 타이 로터리 이벤트 기획문서.eml">20230703_23520_[FOOD] 타이 로터리 이벤트 기획문서.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 문자서비스</td>
+<td>2023-07-04 15:01</td>
+<td>5.5KB</td>
+<td><a href="Files/20230704_23535_[FOOD] 문자서비스.eml">20230704_23535_[FOOD] 문자서비스.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 로터리 공식문의</td>
+<td>2023-07-04 19:37</td>
+<td>6KB</td>
+<td><a href="Files/20230704_23539_[FOOD] 로터리 공식문의.eml">20230704_23539_[FOOD] 로터리 공식문의.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: [FOOD] 로터리 공식문의</td>
+<td>2023-07-05 10:47</td>
+<td>9.7KB</td>
+<td><a href="Files/20230705_23542_Re_RE_ [FOOD] 로터리 공식문의.eml">20230705_23542_Re_RE_ [FOOD] 로터리 공식문의.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 데이타 이전을 위한 관리자 정보요청</td>
+<td>2023-07-05 14:28</td>
+<td>17.9KB</td>
+<td><a href="Files/20230705_23543_[FOOD] 데이타 이전을 위한 관리자 정보요청.eml">20230705_23543_[FOOD] 데이타 이전을 위한 관리자 정보요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 메인 페이지 디자인 시안 컴펌요청</td>
+<td>2023-07-05 20:29</td>
+<td>2.2MB</td>
+<td><a href="Files/20230705_23547_[FOOD] 메인 페이지 디자인 시안 컴펌요청.eml">20230705_23547_[FOOD] 메인 페이지 디자인 시안 컴펌요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[FOOD] 메인 페이지 디자인 시안 컴펌요청</td>
+<td>2023-07-05 22:43</td>
+<td>8.8KB</td>
+<td><a href="Files/20230705_23548_Re_[FOOD] 메인 페이지 디자인 시안 컴펌요청.eml">20230705_23548_Re_[FOOD] 메인 페이지 디자인 시안 컴펌요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;megarock3@nate.com&gt;</td>
+<td>[FOOD]  주간 업무보고</td>
+<td>2023-07-08 14:27</td>
+<td>162.7KB</td>
+<td><a href="Files/20230708_23584_[FOOD]  주간 업무보고.eml">20230708_23584_[FOOD]  주간 업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:웹/앱쇼핑몰 개발을 위한 정보 제공 요청</td>
+<td>2023-07-08 14:38</td>
+<td>28.3KB</td>
+<td><a href="Files/20230708_23585_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml">20230708_23585_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Fw:[FOOD] 정산</td>
+<td>2023-07-08 14:43</td>
+<td>940.4KB</td>
+<td><a href="Files/20230708_23586_Fw_[FOOD] 정산.eml">20230708_23586_Fw_[FOOD] 정산.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:웹/앱쇼핑몰 개발을 위한 정보 제공 요청</td>
+<td>2023-07-08 14:44</td>
+<td>16.6KB</td>
+<td><a href="Files/20230708_23587_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml">20230708_23587_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[FOOD] 문자서비스</td>
+<td>2023-07-08 14:45</td>
+<td>7.5KB</td>
+<td><a href="Files/20230708_23588_Re_[FOOD] 문자서비스.eml">20230708_23588_Re_[FOOD] 문자서비스.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:[FOOD] 문자서비스</td>
+<td>2023-07-08 15:56</td>
+<td>10.8KB</td>
+<td><a href="Files/20230708_23590_Re_Re_[FOOD] 문자서비스.eml">20230708_23590_Re_Re_[FOOD] 문자서비스.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:[FOOD] 메인 페이지 디자인 시안 컴펌요청</td>
+<td>2023-07-10 19:00</td>
+<td>4.1MB</td>
+<td><a href="Files/20230710_23605_Re_Re_[FOOD] 메인 페이지 디자인 시안 컴펌요청.eml">20230710_23605_Re_Re_[FOOD] 메인 페이지 디자인 시안 컴펌요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 여신기능과 백오더 문의 </td>
+<td>2023-07-10 22:24</td>
+<td>1MB</td>
+<td><a href="Files/20230710_23606_[FOOD] 여신기능과 백오더 문의 .eml">20230710_23606_[FOOD] 여신기능과 백오더 문의 .eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 상품가격문의 </td>
+<td>2023-07-11 19:53</td>
+<td>6.8KB</td>
+<td><a href="Files/20230711_23612_[FOOD] 상품가격문의 .eml">20230711_23612_[FOOD] 상품가격문의 .eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무 보고</td>
+<td>2023-07-15 14:49</td>
+<td>185.4KB</td>
+<td><a href="Files/20230715_23663_[FOOD] 주간업무 보고.eml">20230715_23663_[FOOD] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:[FOOD] 메인 페이지 디자인 시안 컴펌요청</td>
+<td>2023-07-15 15:05</td>
+<td>3.2MB</td>
+<td><a href="Files/20230715_23664_Re_Re_Re_[FOOD] 메인 페이지 디자인 시안 컴펌요청.eml">20230715_23664_Re_Re_Re_[FOOD] 메인 페이지 디자인 시안 컴펌요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:웹/앱쇼핑몰 개발을 위한 정보 제공 요청</td>
+<td>2023-07-15 15:08</td>
+<td>44.2KB</td>
+<td><a href="Files/20230715_23665_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml">20230715_23665_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] LINE 상담 이슈 </td>
+<td>2023-07-15 15:38</td>
+<td>578.5KB</td>
+<td><a href="Files/20230715_23666_[FOOD] LINE 상담 이슈 .eml">20230715_23666_[FOOD] LINE 상담 이슈 .eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 대리점 회원 이전 이슈</td>
+<td>2023-07-15 16:15</td>
+<td>7.9KB</td>
+<td><a href="Files/20230715_23667_[FOOD] 대리점 회원 이전 이슈.eml">20230715_23667_[FOOD] 대리점 회원 이전 이슈.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무 보고</td>
+<td>2023-07-22 13:10</td>
+<td>204.9KB</td>
+<td><a href="Files/20230722_23751_[FOOD] 주간업무 보고.eml">20230722_23751_[FOOD] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:Re:[FOOD] 메인 페이지 디자인 시안 컴펌요청</td>
+<td>2023-07-22 13:12</td>
+<td>2.1MB</td>
+<td><a href="Files/20230722_23752_Re_Re_Re_Re_[FOOD] 메인 페이지 디자인 시안 컴펌요청.eml">20230722_23752_Re_Re_Re_Re_[FOOD] 메인 페이지 디자인 시안 컴펌요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:웹/앱쇼핑몰 개발을 위한 정보 제공 요청</td>
+<td>2023-07-22 13:13</td>
+<td>59.8KB</td>
+<td><a href="Files/20230722_23753_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml">20230722_23753_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[FOOD] LINE 상담 이슈</td>
+<td>2023-07-22 13:16</td>
+<td>581.2KB</td>
+<td><a href="Files/20230722_23754_Re_[FOOD] LINE 상담 이슈.eml">20230722_23754_Re_[FOOD] LINE 상담 이슈.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 추가요청 문의 답변</td>
+<td>2023-07-22 13:31</td>
+<td>7.2KB</td>
+<td><a href="Files/20230722_23755_[FOOD] 추가요청 문의 답변.eml">20230722_23755_[FOOD] 추가요청 문의 답변.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] PDP에서 BOX,EA... 등의 옵션별 상품 노출 샘플 </td>
+<td>2023-07-23 11:07</td>
+<td>4.9KB</td>
+<td><a href="Files/20230723_23769_[FOOD] PDP에서 BOX,EA... 등의 옵션별 상품 노출 샘플 .eml">20230723_23769_[FOOD] PDP에서 BOX,EA... 등의 옵션별 상품 노출 샘플 .eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무 보고</td>
+<td>2023-07-29 12:59</td>
+<td>227.5KB</td>
+<td><a href="Files/20230729_23828_[FOOD] 주간업무 보고.eml">20230729_23828_[FOOD] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD]  디자인 시안 컴펌요청</td>
+<td>2023-07-29 13:04</td>
+<td>912.9KB</td>
+<td><a href="Files/20230729_23829_[FOOD]  디자인 시안 컴펌요청.eml">20230729_23829_[FOOD]  디자인 시안 컴펌요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:Re:웹/앱쇼핑몰 개발을 위한 정보 제공 요청</td>
+<td>2023-07-29 13:05</td>
+<td>63.3KB</td>
+<td><a href="Files/20230729_23830_Re_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml">20230729_23830_Re_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[FOOD] 주간업무 보고</td>
+<td>2023-08-05 11:18</td>
+<td>246.9KB</td>
+<td><a href="Files/20230805_23886_Re_[FOOD] 주간업무 보고.eml">20230805_23886_Re_[FOOD] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[FOOD]  디자인 시안 컴펌요청</td>
+<td>2023-08-05 11:19</td>
+<td>2.2MB</td>
+<td><a href="Files/20230805_23887_Re_[FOOD]  디자인 시안 컴펌요청.eml">20230805_23887_Re_[FOOD]  디자인 시안 컴펌요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:Re:Re:웹/앱쇼핑몰 개발을 위한 정보 제공 요청</td>
+<td>2023-08-05 11:21</td>
+<td>67.1KB</td>
+<td><a href="Files/20230805_23888_Re_Re_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml">20230805_23888_Re_Re_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:[FOOD] LINE 상담 이슈</td>
+<td>2023-08-07 15:47</td>
+<td>5.5KB</td>
+<td><a href="Files/20230807_23904_Re_RE_ Re_[FOOD] LINE 상담 이슈.eml">20230807_23904_Re_RE_ Re_[FOOD] LINE 상담 이슈.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 출장 관련 안내 메일</td>
+<td>2023-08-07 15:48</td>
+<td>6.1KB</td>
+<td><a href="Files/20230807_23905_[FOOD] 출장 관련 안내 메일.eml">20230807_23905_[FOOD] 출장 관련 안내 메일.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무 보고</td>
+<td>2023-08-12 12:45</td>
+<td>267.6KB</td>
+<td><a href="Files/20230812_23950_[FOOD] 주간업무 보고.eml">20230812_23950_[FOOD] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD]  디자인 시안 컴펌요청</td>
+<td>2023-08-12 14:27</td>
+<td>662.9KB</td>
+<td><a href="Files/20230812_23951_[FOOD]  디자인 시안 컴펌요청.eml">20230812_23951_[FOOD]  디자인 시안 컴펌요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD]  디자인 시안 컴펌요청</td>
+<td>2023-08-12 14:27</td>
+<td>661.5KB</td>
+<td><a href="Files/20230812_23952_[FOOD]  디자인 시안 컴펌요청.eml">20230812_23952_[FOOD]  디자인 시안 컴펌요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:Re:Re:Re:웹/앱쇼핑몰 개발을 위한 정보 제공 요청</td>
+<td>2023-08-12 14:29</td>
+<td>70.6KB</td>
+<td><a href="Files/20230812_23953_Re_Re_Re_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml">20230812_23953_Re_Re_Re_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 세금게산서 발행을위한 정보요청</td>
+<td>2023-08-16 15:41</td>
+<td>4.6KB</td>
+<td><a href="Files/20230816_23982_[FOOD] 세금게산서 발행을위한 정보요청.eml">20230816_23982_[FOOD] 세금게산서 발행을위한 정보요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[FOOD] 주간업무 보고</td>
+<td>2023-08-19 15:22</td>
+<td>288KB</td>
+<td><a href="Files/20230819_24021_Re_[FOOD] 주간업무 보고.eml">20230819_24021_Re_[FOOD] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:Re:Re:Re:Re:웹/앱쇼핑몰 개발을 위한 정보 제공 요청</td>
+<td>2023-08-19 15:23</td>
+<td>74.1KB</td>
+<td><a href="Files/20230819_24022_Re_Re_Re_Re_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml">20230819_24022_Re_Re_Re_Re_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:세금계산서 발급 정보</td>
+<td>2023-08-23 08:14</td>
+<td>6.3KB</td>
+<td><a href="Files/20230823_24051_Re_세금계산서 발급 정보.eml">20230823_24051_Re_세금계산서 발급 정보.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:세금계산서 발급 정보</td>
+<td>2023-08-23 11:17</td>
+<td>6.1KB</td>
+<td><a href="Files/20230823_24054_Re_세금계산서 발급 정보.eml">20230823_24054_Re_세금계산서 발급 정보.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[Food] OK소프트 통장과 사업자등록증입니다.</td>
+<td>2023-08-23 13:28</td>
+<td>3.3MB</td>
+<td><a href="Files/20230823_24055_[Food] OK소프트 통장과 사업자등록증입니다..eml">20230823_24055_[Food] OK소프트 통장과 사업자등록증입니다..eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무 보고</td>
+<td>2023-08-26 14:25</td>
+<td>5.8KB</td>
+<td><a href="Files/20230826_24079_[FOOD] 주간업무 보고.eml">20230826_24079_[FOOD] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:Re:Re:Re:Re:Re:웹/앱쇼핑몰 개발을 위한 정보 제공 요청</td>
+<td>2023-08-26 14:27</td>
+<td>78KB</td>
+<td><a href="Files/20230826_24080_Re_Re_Re_Re_Re_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml">20230826_24080_Re_Re_Re_Re_Re_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공 요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[FOOD] 주간업무 보고</td>
+<td>2023-08-26 14:28</td>
+<td>305.3KB</td>
+<td><a href="Files/20230826_24081_Re_[FOOD] 주간업무 보고.eml">20230826_24081_Re_[FOOD] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 도메인 관리 회사 정보 요청</td>
+<td>2023-08-29 20:48</td>
+<td>5.6KB</td>
+<td><a href="Files/20230829_24115_[FOOD] 도메인 관리 회사 정보 요청.eml">20230829_24115_[FOOD] 도메인 관리 회사 정보 요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무 보고</td>
+<td>2023-09-02 14:16</td>
+<td>567.2KB</td>
+<td><a href="Files/20230902_24162_[FOOD] 주간업무 보고.eml">20230902_24162_[FOOD] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:Re:Re:Re:Re:Re:Re:Re:웹/앱쇼핑몰 개발을 위한 정보 제공 요청</td>
+<td>2023-09-02 14:43</td>
+<td>14.8KB</td>
+<td><a href="Files/20230902_24163_Re_RE_ Re_Re_Re_Re_Re_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공....eml">20230902_24163_Re_RE_ Re_Re_Re_Re_Re_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공....eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무 보고</td>
+<td>2023-09-09 16:10</td>
+<td>342KB</td>
+<td><a href="Files/20230909_24243_[FOOD] 주간업무 보고.eml">20230909_24243_[FOOD] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 앱 마켓플레이스 정보요청 </td>
+<td>2023-09-09 16:11</td>
+<td>4.2KB</td>
+<td><a href="Files/20230909_24244_[FOOD] 앱 마켓플레이스 정보요청 .eml">20230909_24244_[FOOD] 앱 마켓플레이스 정보요청 .eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[FOOD] 앱 마켓플레이스 정보요청</td>
+<td>2023-09-09 16:50</td>
+<td>6.8KB</td>
+<td><a href="Files/20230909_24245_Re_[FOOD] 앱 마켓플레이스 정보요청.eml">20230909_24245_Re_[FOOD] 앱 마켓플레이스 정보요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:[FOOD] 앱 마켓플레이스 정보요청</td>
+<td>2023-09-11 16:48</td>
+<td>12.9KB</td>
+<td><a href="Files/20230911_24279_Re_Re_[FOOD] 앱 마켓플레이스 정보요청.eml">20230911_24279_Re_Re_[FOOD] 앱 마켓플레이스 정보요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무 보고</td>
+<td>2023-09-16 13:12</td>
+<td>363.4KB</td>
+<td><a href="Files/20230916_24355_[FOOD] 주간업무 보고.eml">20230916_24355_[FOOD] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무 보고</td>
+<td>2023-09-23 13:29</td>
+<td>382.6KB</td>
+<td><a href="Files/20230923_24423_[FOOD] 주간업무 보고.eml">20230923_24423_[FOOD] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:Re:Re:Re:Re:Re:Re:Re:웹/앱쇼핑몰 개발을 위한 정보 제공 요청</td>
+<td>2023-09-28 22:01</td>
+<td>583.2KB</td>
+<td><a href="Files/20230928_24467_Re_RE_ Re_Re_Re_Re_Re_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공....eml">20230928_24467_Re_RE_ Re_Re_Re_Re_Re_Re_Re_Re_웹_앱쇼핑몰 개발을 위한 정보 제공....eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무 보고</td>
+<td>2023-09-30 14:50</td>
+<td>401.7KB</td>
+<td><a href="Files/20230930_24480_[FOOD] 주간업무 보고.eml">20230930_24480_[FOOD] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무 보고</td>
+<td>2023-10-08 12:44</td>
+<td>421.4KB</td>
+<td><a href="Files/20231008_24547_[FOOD] 주간업무 보고.eml">20231008_24547_[FOOD] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무보고</td>
+<td>2023-10-14 16:34</td>
+<td>442.2KB</td>
+<td><a href="Files/20231014_24624_[FOOD] 주간업무보고.eml">20231014_24624_[FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 고객정산(대리점)</td>
+<td>2023-10-14 17:35</td>
+<td>669.3KB</td>
+<td><a href="Files/20231014_24625_[FOOD] 고객정산(대리점).eml">20231014_24625_[FOOD] 고객정산(대리점).eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무보고</td>
+<td>2023-10-21 13:20</td>
+<td>461.7KB</td>
+<td><a href="Files/20231021_24704_[FOOD] 주간업무보고.eml">20231021_24704_[FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 마일스톤</td>
+<td>2023-10-22 16:06</td>
+<td>36.4KB</td>
+<td><a href="Files/20231022_24711_[FOOD] 마일스톤.eml">20231022_24711_[FOOD] 마일스톤.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[요청] 달랏마트 홈페이지 하단 대표자 이름수정</td>
+<td>2023-10-27 13:49</td>
+<td>6.8KB</td>
+<td><a href="Files/20231027_24792_Re_[요청] 달랏마트 홈페이지 하단 대표자 이름수정.eml">20231027_24792_Re_[요청] 달랏마트 홈페이지 하단 대표자 이름수정.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[요청] 달랏마트 홈페이지 하단 대표자 이름수정</td>
+<td>2023-10-27 15:18</td>
+<td>222.4KB</td>
+<td><a href="Files/20231027_24793_Re_[요청] 달랏마트 홈페이지 하단 대표자 이름수정.eml">20231027_24793_Re_[요청] 달랏마트 홈페이지 하단 대표자 이름수정.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:[요청] 달랏마트 홈페이지 하단 대표자 이름수정</td>
+<td>2023-10-27 18:09</td>
+<td>340.5KB</td>
+<td><a href="Files/20231027_24798_Re_Re_[요청] 달랏마트 홈페이지 하단 대표자 이름수정.eml">20231027_24798_Re_Re_[요청] 달랏마트 홈페이지 하단 대표자 이름수정.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무보고</td>
+<td>2023-10-28 18:22</td>
+<td>481.2KB</td>
+<td><a href="Files/20231028_24807_[FOOD] 주간업무보고.eml">20231028_24807_[FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[요청] 달랏마트 홈페이지 하단 대표자 이름수정</td>
+<td>2023-11-02 14:10</td>
+<td>5.9KB</td>
+<td><a href="Files/20231102_24869_Re_[요청] 달랏마트 홈페이지 하단 대표자 이름수정.eml">20231102_24869_Re_[요청] 달랏마트 홈페이지 하단 대표자 이름수정.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 서브 도메인추가</td>
+<td>2023-11-02 18:00</td>
+<td>7.1KB</td>
+<td><a href="Files/20231102_24873_[FOOD] 서브 도메인추가.eml">20231102_24873_[FOOD] 서브 도메인추가.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무보고</td>
+<td>2023-11-04 12:46</td>
+<td>504.5KB</td>
+<td><a href="Files/20231104_24909_[FOOD] 주간업무보고.eml">20231104_24909_[FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무보고</td>
+<td>2023-11-11 10:50</td>
+<td>522.2KB</td>
+<td><a href="Files/20231111_25020_[FOOD] 주간업무보고.eml">20231111_25020_[FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무보고</td>
+<td>2023-11-18 12:07</td>
+<td>541.2KB</td>
+<td><a href="Files/20231118_25133_[FOOD] 주간업무보고.eml">20231118_25133_[FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무보고</td>
+<td>2023-11-25 13:59</td>
+<td>5.9KB</td>
+<td><a href="Files/20231125_25250_[FOOD] 주간업무보고.eml">20231125_25250_[FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: [FOOD] 주간업무보고</td>
+<td>2023-11-29 15:32</td>
+<td>563.6KB</td>
+<td><a href="Files/20231129_25332_Re_RE_ [FOOD] 주간업무보고.eml">20231129_25332_Re_RE_ [FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:RE: [FOOD] 주간업무보고</td>
+<td>2023-11-29 16:17</td>
+<td>11.2KB</td>
+<td><a href="Files/20231129_25334_Re_RE_ Re_RE_ [FOOD] 주간업무보고.eml">20231129_25334_Re_RE_ Re_RE_ [FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무보고</td>
+<td>2023-12-02 13:26</td>
+<td>582.7KB</td>
+<td><a href="Files/20231202_25383_[FOOD] 주간업무보고.eml">20231202_25383_[FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 사용자 가이드</td>
+<td>2023-12-03 20:01</td>
+<td>2.8MB</td>
+<td><a href="Files/20231203_25394_[FOOD] 사용자 가이드.eml">20231203_25394_[FOOD] 사용자 가이드.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: [FOOD] 주간업무보고</td>
+<td>2023-12-04 15:32</td>
+<td>13.7KB</td>
+<td><a href="Files/20231204_25413_Re_RE_ [FOOD] 주간업무보고.eml">20231204_25413_Re_RE_ [FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:RE: [FOOD] 주간업무보고</td>
+<td>2023-12-05 11:05</td>
+<td>18.8KB</td>
+<td><a href="Files/20231205_25432_Re_RE_ Re_RE_ [FOOD] 주간업무보고.eml">20231205_25432_Re_RE_ Re_RE_ [FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[FOOD] 사용자 가이드</td>
+<td>2023-12-08 14:32</td>
+<td>41KB</td>
+<td><a href="Files/20231208_25484_Re_[FOOD] 사용자 가이드.eml">20231208_25484_Re_[FOOD] 사용자 가이드.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:[FOOD] 사용자 가이드</td>
+<td>2023-12-08 14:36</td>
+<td>538.2KB</td>
+<td><a href="Files/20231208_25485_Re_Re_[FOOD] 사용자 가이드.eml">20231208_25485_Re_Re_[FOOD] 사용자 가이드.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:[FOOD] 사용자 가이드</td>
+<td>2023-12-08 15:26</td>
+<td>263.4KB</td>
+<td><a href="Files/20231208_25487_Re_Re_Re_[FOOD] 사용자 가이드.eml">20231208_25487_Re_Re_Re_[FOOD] 사용자 가이드.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[FOOD] 주간업무보고</td>
+<td>2023-12-09 16:49</td>
+<td>8.3KB</td>
+<td><a href="Files/20231209_25505_Re_[FOOD] 주간업무보고.eml">20231209_25505_Re_[FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:[FOOD] 주간업무보고</td>
+<td>2023-12-09 17:00</td>
+<td>604.4KB</td>
+<td><a href="Files/20231209_25506_Re_Re_[FOOD] 주간업무보고.eml">20231209_25506_Re_Re_[FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:Re:[FOOD] 사용자 가이드</td>
+<td>2023-12-14 02:37</td>
+<td>702.2KB</td>
+<td><a href="Files/20231214_25586_Re_Re_Re_Re_[FOOD] 사용자 가이드.eml">20231214_25586_Re_Re_Re_Re_[FOOD] 사용자 가이드.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무보고</td>
+<td>2023-12-16 15:02</td>
+<td>5.8KB</td>
+<td><a href="Files/20231216_25640_[FOOD] 주간업무보고.eml">20231216_25640_[FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[FOOD] 주간업무보고</td>
+<td>2023-12-16 15:02</td>
+<td>621.5KB</td>
+<td><a href="Files/20231216_25641_Re_[FOOD] 주간업무보고.eml">20231216_25641_Re_[FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:[FOOD] 주간업무보고</td>
+<td>2023-12-16 20:48</td>
+<td>69.1KB</td>
+<td><a href="Files/20231216_25645_Re_Re_[FOOD] 주간업무보고.eml">20231216_25645_Re_Re_[FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 앱 도메인 리다이렉트 이슈</td>
+<td>2023-12-20 21:02</td>
+<td>9.5KB</td>
+<td><a href="Files/20231220_25710_[FOOD] 앱 도메인 리다이렉트 이슈.eml">20231220_25710_[FOOD] 앱 도메인 리다이렉트 이슈.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[FOOD] 앱 도메인 리다이렉트 이슈</td>
+<td>2023-12-21 01:52</td>
+<td>16.8KB</td>
+<td><a href="Files/20231221_25713_Re_[FOOD] 앱 도메인 리다이렉트 이슈.eml">20231221_25713_Re_[FOOD] 앱 도메인 리다이렉트 이슈.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] apk 파일입니다</td>
+<td>2023-12-21 18:35</td>
+<td>6.7KB</td>
+<td><a href="Files/20231221_25724_[FOOD] apk 파일입니다.eml">20231221_25724_[FOOD] apk 파일입니다.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 주간업무보고</td>
+<td>2023-12-23 14:20</td>
+<td>641.9KB</td>
+<td><a href="Files/20231223_25743_[FOOD] 주간업무보고.eml">20231223_25743_[FOOD] 주간업무보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] PG 라이브 키 정보 요청 </td>
+<td>2023-12-23 14:30</td>
+<td>5KB</td>
+<td><a href="Files/20231223_25744_[FOOD] PG 라이브 키 정보 요청 .eml">20231223_25744_[FOOD] PG 라이브 키 정보 요청 .eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;megarock3@nate.com&gt;</td>
+<td>[달랏닷컴] vbank 승인 도메인 추가 요청</td>
+<td>2023-12-29 12:33</td>
+<td>5.6KB</td>
+<td><a href="Files/20231229_25817_[달랏닷컴] vbank 승인 도메인 추가 요청.eml">20231229_25817_[달랏닷컴] vbank 승인 도메인 추가 요청.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;megarock3@nate.com&gt;</td>
+<td>[달랏] 자료 전달 입니다. </td>
+<td>2023-12-29 18:11</td>
+<td>312.3KB</td>
+<td><a href="Files/20231229_25820_[달랏] 자료 전달 입니다. .eml">20231229_25820_[달랏] 자료 전달 입니다. .eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[FOOD] 세금계산서 발금 </td>
+<td>2023-12-29 23:59</td>
+<td>4.6KB</td>
+<td><a href="Files/20231229_25824_[FOOD] 세금계산서 발금 .eml">20231229_25824_[FOOD] 세금계산서 발금 .eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;megarock3@nate.com&gt;</td>
+<td>Re:[달랏] 자료 전달 입니다.</td>
+<td>2023-12-30 12:42</td>
+<td>12.1KB</td>
+<td><a href="Files/20231230_25828_Re_[달랏] 자료 전달 입니다..eml">20231230_25828_Re_[달랏] 자료 전달 입니다..eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;megarock3@nate.com&gt;</td>
+<td>[달랏] 가상계좌 테스트 결제 취소 요청 </td>
+<td>2023-12-30 12:45</td>
+<td>5.4KB</td>
+<td><a href="Files/20231230_25829_[달랏] 가상계좌 테스트 결제 취소 요청 .eml">20231230_25829_[달랏] 가상계좌 테스트 결제 취소 요청 .eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;megarock3@nate.com&gt;</td>
+<td>[달랏] 주간업무 보고</td>
+<td>2023-12-30 12:54</td>
+<td>659.4KB</td>
+<td><a href="Files/20231230_25830_[달랏] 주간업무 보고.eml">20231230_25830_[달랏] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;megarock3@nate.com&gt;</td>
+<td>Re:[달랏] 주간업무 보고</td>
+<td>2024-01-03 11:36</td>
+<td>121.6KB</td>
+<td><a href="Files/20240103_25867_Re_[달랏] 주간업무 보고.eml">20240103_25867_Re_[달랏] 주간업무 보고.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[달랏마트] 오픈 연기 관련</td>
+<td>2024-01-06 18:18</td>
+<td>34.7KB</td>
+<td><a href="Files/20240106_25906_Re_[달랏마트] 오픈 연기 관련.eml">20240106_25906_Re_[달랏마트] 오픈 연기 관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:[달랏마트] 오픈 연기 관련</td>
+<td>2024-01-06 19:15</td>
+<td>42.4KB</td>
+<td><a href="Files/20240106_25908_Re_Re_[달랏마트] 오픈 연기 관련.eml">20240106_25908_Re_Re_[달랏마트] 오픈 연기 관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:[달랏마트] 오픈 연기 관련</td>
+<td>2024-01-06 20:43</td>
+<td>46KB</td>
+<td><a href="Files/20240106_25909_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml">20240106_25909_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:[달랏마트] 오픈 연기 관련</td>
+<td>2024-01-07 20:55</td>
+<td>5.5KB</td>
+<td><a href="Files/20240107_25915_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml">20240107_25915_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:Re:[달랏마트] 오픈 연기 관련</td>
+<td>2024-01-07 21:04</td>
+<td>8.5KB</td>
+<td><a href="Files/20240107_25916_Re_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml">20240107_25916_Re_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;megarock3@nate.com&gt;</td>
+<td>[달랏] VANK 기능 추가 관련</td>
+<td>2024-01-10 00:48</td>
+<td>5.5KB</td>
+<td><a href="Files/20240110_25948_[달랏] VANK 기능 추가 관련.eml">20240110_25948_[달랏] VANK 기능 추가 관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:달랏new어플 버그 240109.xlsx</td>
+<td>2024-01-10 11:36</td>
+<td>26KB</td>
+<td><a href="Files/20240110_25959_Re_달랏new어플 버그 240109.xlsx.eml">20240110_25959_Re_달랏new어플 버그 240109.xlsx.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:달랏new어플 버그 240109.xlsx</td>
+<td>2024-01-10 18:16</td>
+<td>101KB</td>
+<td><a href="Files/20240110_25967_Re_Re_달랏new어플 버그 240109.xlsx.eml">20240110_25967_Re_Re_달랏new어플 버그 240109.xlsx.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:Re:[달랏마트] 오픈 연기 관련</td>
+<td>2024-01-11 10:02</td>
+<td>9.1KB</td>
+<td><a href="Files/20240111_25974_Re_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml">20240111_25974_Re_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[OK소프트] 유지보수 계약 문의안내</td>
+<td>2024-01-11 13:12</td>
+<td>6.6KB</td>
+<td><a href="Files/20240111_25979_[OK소프트] 유지보수 계약 문의안내.eml">20240111_25979_[OK소프트] 유지보수 계약 문의안내.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:달랏new어플 버그 240109.xlsx</td>
+<td>2024-01-11 19:51</td>
+<td>112.3KB</td>
+<td><a href="Files/20240111_25987_Re_Re_Re_달랏new어플 버그 240109.xlsx.eml">20240111_25987_Re_Re_Re_달랏new어플 버그 240109.xlsx.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[OK소프트] 대시보드 동영상</td>
+<td>2024-01-15 17:20</td>
+<td>10.1KB</td>
+<td><a href="Files/20240115_26020_[OK소프트] 대시보드 동영상.eml">20240115_26020_[OK소프트] 대시보드 동영상.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;megarock3@nate.com&gt;</td>
+<td>Re:[달랏마트] 요청작업 소요시간</td>
+<td>2024-01-18 13:33</td>
+<td>34.3KB</td>
+<td><a href="Files/20240118_26064_Re_[달랏마트] 요청작업 소요시간.eml">20240118_26064_Re_[달랏마트] 요청작업 소요시간.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;megarock3@nate.com&gt;</td>
+<td>Re:[달랏마트] 요청작업 소요시간</td>
+<td>2024-01-18 13:45</td>
+<td>59.8KB</td>
+<td><a href="Files/20240118_26065_Re_[달랏마트] 요청작업 소요시간.eml">20240118_26065_Re_[달랏마트] 요청작업 소요시간.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:Re:Re:[달랏마트] 오픈 연기 관련</td>
+<td>2024-01-23 11:04</td>
+<td>269.5KB</td>
+<td><a href="Files/20240123_26119_Re_Re_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml">20240123_26119_Re_Re_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:Re:Re:Re:[달랏마트] 오픈 연기 관련</td>
+<td>2024-01-23 11:09</td>
+<td>26.5KB</td>
+<td><a href="Files/20240123_26120_Re_Re_Re_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml">20240123_26120_Re_Re_Re_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:Re:Re:Re:Re:[달랏마트] 오픈 연기 관련</td>
+<td>2024-01-24 11:02</td>
+<td>36.7KB</td>
+<td><a href="Files/20240124_26129_Re_Re_Re_Re_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml">20240124_26129_Re_Re_Re_Re_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[달랏마트] 메일 미수신 장애안내 사과문 </td>
+<td>2024-01-24 11:29</td>
+<td>5KB</td>
+<td><a href="Files/20240124_26130_[달랏마트] 메일 미수신 장애안내 사과문 .eml">20240124_26130_[달랏마트] 메일 미수신 장애안내 사과문 .eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:Re:Re:Re:Re:Re:[달랏마트] 오픈 연기 관련</td>
+<td>2024-01-27 23:35</td>
+<td>44.5KB</td>
+<td><a href="Files/20240127_26170_Re_Re_Re_Re_Re_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml">20240127_26170_Re_Re_Re_Re_Re_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[달랏마트] 요청작업 소요시간</td>
+<td>2024-01-28 12:46</td>
+<td>41.1KB</td>
+<td><a href="Files/20240128_26178_Re_[달랏마트] 요청작업 소요시간.eml">20240128_26178_Re_[달랏마트] 요청작업 소요시간.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[OK소프트] 설연휴 기간 업무지원 안내</td>
+<td>2024-01-28 14:52</td>
+<td>5.7KB</td>
+<td><a href="Files/20240128_26179_[OK소프트] 설연휴 기간 업무지원 안내.eml">20240128_26179_[OK소프트] 설연휴 기간 업무지원 안내.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:[달랏마트] 요청작업 소요시간</td>
+<td>2024-01-28 15:22</td>
+<td>51.7KB</td>
+<td><a href="Files/20240128_26180_Re_Re_[달랏마트] 요청작업 소요시간.eml">20240128_26180_Re_Re_[달랏마트] 요청작업 소요시간.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:Re:Re:Re:Re:Re:Re:Re:[달랏마트] 오픈 연기 관련</td>
+<td>2024-01-28 15:24</td>
+<td>53.5KB</td>
+<td><a href="Files/20240128_26181_Re_Re_Re_Re_Re_Re_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml">20240128_26181_Re_Re_Re_Re_Re_Re_Re_Re_Re_[달랏마트] 오픈 연기 관련.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[달랏마트] 메일 수신 요청 </td>
+<td>2024-01-30 14:40</td>
+<td>4.5KB</td>
+<td><a href="Files/20240130_26208_[달랏마트] 메일 수신 요청 .eml">20240130_26208_[달랏마트] 메일 수신 요청 .eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[달랏] 동영상 자료</td>
+<td>2024-01-30 17:50</td>
+<td>2.1MB</td>
+<td><a href="Files/20240130_26213_[달랏] 동영상 자료.eml">20240130_26213_[달랏] 동영상 자료.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: [달랏] 동영상 자료</td>
+<td>2024-01-31 14:44</td>
+<td>60.3KB</td>
+<td><a href="Files/20240131_26231_Re_RE_ [달랏] 동영상 자료.eml">20240131_26231_Re_RE_ [달랏] 동영상 자료.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[달랏마트] CSV 출력기능</td>
+<td>2024-01-31 15:05</td>
+<td>3.7MB</td>
+<td><a href="Files/20240131_26234_Re_[달랏마트] CSV 출력기능.eml">20240131_26234_Re_[달랏마트] CSV 출력기능.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:RE: [달랏] 동영상 자료</td>
+<td>2024-01-31 17:17</td>
+<td>8.3MB</td>
+<td><a href="Files/20240131_26237_Re_RE_ Re_RE_ [달랏] 동영상 자료.eml">20240131_26237_Re_RE_ Re_RE_ [달랏] 동영상 자료.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:[달랏마트] 요청작업 소요시간</td>
+<td>2024-02-02 14:44</td>
+<td>37.1KB</td>
+<td><a href="Files/20240202_26269_Re_[달랏마트] 요청작업 소요시간.eml">20240202_26269_Re_[달랏마트] 요청작업 소요시간.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:[달랏마트] CSV 출력기능</td>
+<td>2024-02-02 15:24</td>
+<td>3.7MB</td>
+<td><a href="Files/20240202_26273_Re_RE_ Re_[달랏마트] CSV 출력기능.eml">20240202_26273_Re_RE_ Re_[달랏마트] CSV 출력기능.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:RE: Re:[달랏마트] CSV 출력기능</td>
+<td>2024-02-02 16:28</td>
+<td>3.7MB</td>
+<td><a href="Files/20240202_26279_Re_RE_ Re_RE_ Re_[달랏마트] CSV 출력기능.eml">20240202_26279_Re_RE_ Re_RE_ Re_[달랏마트] CSV 출력기능.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:RE: Re:[달랏마트] CSV 출력기능</td>
+<td>2024-02-02 16:45</td>
+<td>3.7MB</td>
+<td><a href="Files/20240202_26283_Re_RE_ Re_RE_ Re_[달랏마트] CSV 출력기능.eml">20240202_26283_Re_RE_ Re_RE_ Re_[달랏마트] CSV 출력기능.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:[달랏마트] 요청작업 소요시간</td>
+<td>2024-02-02 17:21</td>
+<td>42.6KB</td>
+<td><a href="Files/20240202_26288_Re_RE_ Re_[달랏마트] 요청작업 소요시간.eml">20240202_26288_Re_RE_ Re_[달랏마트] 요청작업 소요시간.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:RE: Re:[달랏마트] 요청작업 소요시간</td>
+<td>2024-02-02 18:24</td>
+<td>45.4KB</td>
+<td><a href="Files/20240202_26294_Re_RE_ Re_RE_ Re_[달랏마트] 요청작업 소요시간.eml">20240202_26294_Re_RE_ Re_RE_ Re_[달랏마트] 요청작업 소요시간.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:RE: Re:RE: Re:[달랏마트] 요청작업 소요시간</td>
+<td>2024-02-02 18:30</td>
+<td>197.7KB</td>
+<td><a href="Files/20240202_26295_Re_Re_RE_ Re_RE_ Re_[달랏마트] 요청작업 소요시간.eml">20240202_26295_Re_Re_RE_ Re_RE_ Re_[달랏마트] 요청작업 소요시간.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[OK소프트] 코드프리징 기간 안내</td>
+<td>2024-02-19 12:46</td>
+<td>4.3KB</td>
+<td><a href="Files/20240219_26512_[OK소프트] 코드프리징 기간 안내.eml">20240219_26512_[OK소프트] 코드프리징 기간 안내.eml</a></td>
+</tr>
+<tr>
+<td>&quot;류호영&quot; &lt;dalratmart@naver.com&gt;</td>
+<td>달랏마트 오픈 요청사항</td>
+<td>2024-02-21 11:13</td>
+<td>671.9KB</td>
+<td><a href="Files/20240221_26548_달랏마트 오픈 요청사항.eml">20240221_26548_달랏마트 오픈 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;류호영&quot; &lt;dalratmart@naver.com&gt;</td>
+<td>달랏마트 오픈 요청사항</td>
+<td>2024-02-21 11:19</td>
+<td>672.9KB</td>
+<td><a href="Files/20240221_26549_달랏마트 오픈 요청사항.eml">20240221_26549_달랏마트 오픈 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:달랏마트 오픈 요청사항</td>
+<td>2024-02-21 12:26</td>
+<td>86.6KB</td>
+<td><a href="Files/20240221_26551_Re_달랏마트 오픈 요청사항.eml">20240221_26551_Re_달랏마트 오픈 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:달랏마트 오픈 요청사항</td>
+<td>2024-02-21 12:29</td>
+<td>10.3KB</td>
+<td><a href="Files/20240221_26552_Re_달랏마트 오픈 요청사항.eml">20240221_26552_Re_달랏마트 오픈 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:달랏마트 오픈 요청사항</td>
+<td>2024-02-21 14:44</td>
+<td>10.1KB</td>
+<td><a href="Files/20240221_26554_Re_달랏마트 오픈 요청사항.eml">20240221_26554_Re_달랏마트 오픈 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:달랏마트 오픈 요청사항</td>
+<td>2024-02-23 14:39</td>
+<td>10KB</td>
+<td><a href="Files/20240223_26598_Re_달랏마트 오픈 요청사항.eml">20240223_26598_Re_달랏마트 오픈 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:달랏마트 오픈 요청사항</td>
+<td>2024-02-23 16:06</td>
+<td>12.1KB</td>
+<td><a href="Files/20240223_26602_Re_RE_ Re_달랏마트 오픈 요청사항.eml">20240223_26602_Re_RE_ Re_달랏마트 오픈 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:RE: Re:달랏마트 오픈 요청사항</td>
+<td>2024-02-23 17:43</td>
+<td>18.3KB</td>
+<td><a href="Files/20240223_26611_Re_RE_ Re_RE_ Re_달랏마트 오픈 요청사항.eml">20240223_26611_Re_RE_ Re_RE_ Re_달랏마트 오픈 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:RE: Re:달랏마트 오픈 요청사항</td>
+<td>2024-02-28 16:02</td>
+<td>6.8KB</td>
+<td><a href="Files/20240228_26688_Re_RE_ Re_RE_ Re_달랏마트 오픈 요청사항.eml">20240228_26688_Re_RE_ Re_RE_ Re_달랏마트 오픈 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[OK소프트] 달랏 서버정보</td>
+<td>2024-03-02 14:56</td>
+<td>7.2KB</td>
+<td><a href="Files/20240302_26730_[OK소프트] 달랏 서버정보.eml">20240302_26730_[OK소프트] 달랏 서버정보.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>[OK소프트] 유지보수 계약 문의안내</td>
+<td>2024-03-02 20:53</td>
+<td>135.3KB</td>
+<td><a href="Files/20240302_26733_[OK소프트] 유지보수 계약 문의안내.eml">20240302_26733_[OK소프트] 유지보수 계약 문의안내.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:RE: Re:RE: Re:달랏마트 오픈 요청사항</td>
+<td>2024-03-03 20:53</td>
+<td>7.3KB</td>
+<td><a href="Files/20240303_26745_Re_RE_ Re_RE_ Re_달랏마트 오픈 요청사항.eml">20240303_26745_Re_RE_ Re_RE_ Re_달랏마트 오픈 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>Re:Re:RE: Re:RE: Re:달랏마트 오픈 요청사항</td>
+<td>2024-03-03 20:59</td>
+<td>10.1KB</td>
+<td><a href="Files/20240303_26746_Re_Re_RE_ Re_RE_ Re_달랏마트 오픈 요청사항.eml">20240303_26746_Re_Re_RE_ Re_RE_ Re_달랏마트 오픈 요청사항.eml</a></td>
+</tr>
+<tr>
+<td>&quot;정호진&quot; &lt;junghozin@ok-sft.com&gt;</td>
+<td>달랏마트 프로젝트 종료보고</td>
+<td>2024-03-04 23:49</td>
+<td>40.7KB</td>
+<td><a href="Files/20240304_26768_달랏마트 프로젝트 종료보고.eml">20240304_26768_달랏마트 프로젝트 종료보고.eml</a></td>
+</tr>
+        <!-- //loop -->
+        </tbody>
+    </table>
+
+</div>
+</body>
+
+</html>

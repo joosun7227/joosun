@@ -1,0 +1,94 @@
+ARC-Seal: i=1; a=rsa-sha256; d=naver.com; s=arc-20180730; t=1704815280;
+	cv=none; b=LYrUNcTxBwySclldec899RGTTyOadn9H3LXoOGEgvt0funaAO4HHqlpyoPF4
+	 IR2zk5p2N9z8+PsdqrYcukg0Zc/V4AdaJBn//WWHGiUpEaedfP7TX95vUwWJW0xZ5Z4AAP
+	 035DIyl7/U4wfdWfeUOH1GeG9eidwHV65+IAKSJYHMyg0vFyRNMlX3wUr6eIG88LU2Zr8k
+	 bIUz84fA+G49QYtHD7u5jUuIqx3/FreGFbRCZZFNIz87E4iMblCI5lLqS3OLtegWL3AGe8
+	 dYu2W9MIcqPamNwmOP6vQqeNFfwH3fuTC3jTYsQbal+29QHbNUZPjjDd7s12wyqS0UgVrT
+	 HA==
+ARC-Message-Signature: i=1; a=rsa-sha256; d=naver.com; s=arc-20180730;
+	t=1704815280; c=relaxed/relaxed;
+	bh=PNddUjWrTrF+J/qB6z4zYtnzwgRzH6yUylU0VFgANR0=;
+	h=dkim-signature:message-id:from:to:subject:date; b=Xzav2mg+YayfWidj/vw
+	 eWENN0FfYZjPnMUvWqBHBwSZpYcPb8kYjZoUs2v03t39PAsVFXxDTwyYBdri+M+6686ZUt
+	 z9qbYRthf7Q/qqBJyAebZ9X1vGmhbmhLjygwxlFyVWycNGdOiM3b1NFZH5W+xUDrYVvaGj
+	 5IIWShlpJeUgcy9b77/0Y0jFaV34mt2e9nj6NNwV4GUIbOXoecj3R+DyTG6otS9grRp10V
+	 sUpiu8cpcLVnedkX7BMRGDDvilcPB75EBhG3Q6MDJ4x8WVunsPliYyrfgKRMthjRSblEx7
+	 qVRJLkbGnn5Hsi0Mz8YllCkKcqyrY8TVg0n/czjn45Q==
+ARC-Authentication-Results: i=1; mx.naver.com; 
+  spf=pass (mx.naver.com: domain of megarock3@nate.com designates 117.53.114.132 as permitted sender) smtp.mailfrom=megarock3@nate.com;
+  dkim=pass header.i=@nate.com
+Return-Path: <megarock3@nate.com>
+Received-SPF: pass (mx.naver.com: domain of megarock3@nate.com designates 117.53.114.132 as permitted sender)
+  client-ip=117.53.114.132; x-iptype=white;
+Authentication-Results: mx.naver.com;
+  spf=pass (mx.naver.com: domain of megarock3@nate.com designates 117.53.114.132 as permitted sender) smtp.mailfrom=megarock3@nate.com;
+  dkim=pass header.i=@nate.com
+X-Naver-ESV: +lRYpB3G1H+YbXFCbHmrKxEdaAgmjJ+Y
+X-Session-IP: 117.53.114.132
+Received: from mailtx2.nate.com (mailtx2.nate.com [117.53.114.132])
+  by crcvmail104.nm.naver.com with ESMTP id xL+1NbImQ0ew+RfImmk0NA
+  for <voliamo2@naver.com>
+  (version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+  Tue, 09 Jan 2024 15:48:00 -0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=nate.com;
+	s=s20231130tx; t=1704815280;
+	bh=PNddUjWrTrF+J/qB6z4zYtnzwgRzH6yUylU0VFgANR0=;
+	h=Date:From:To:Subject;
+	b=Qn1MZpumNVGpnrqF9XfeMKUdIpS3/4fuYh0vN8gbcoE0agGb8jEAzIkHfZuBlQ4RY
+	 fPq9dWxdv32eNqWUvh+WoWSOa6ROG37vx0XJBkiz6FBAsaFN+Dv8ClIqiAAxcxx6FV
+	 SaatvKEEJROe5fiiodiqq3u/eq8o47cCuK49ETlE=
+Received: from [10.234.214.37] ([10.234.214.37]) 
+          by mailtx2.nate.com ([10.234.214.16]) 
+          with ESMTP id 1704815279.445245.139977689859840.mailtx2
+          for <voliamo2@naver.com>; 
+          Wed, 10 Jan 2024 00:47:59 +0900 (KST) 
+Message-Id: <9005f1d8a4f477526706f84a1175789c$8bd240fa@mail3.nate.com>
+From: "=?UTF-8?B?7KCV7Zi47KeE?=" <megarock3@nate.com>
+To: dalratmart@naver.com,
+	voliamo2@naver.com
+Subject: =?UTF-8?B?W+uLrOuej10gVkFOSyDquLDriqUg7LaU6rCAIOq0gOugqA==?=
+X-TERRACE-DUMMYSUBJECT: Terrace Spam system                                  *
+Date: Wed, 10 Jan 2024 00:47:58 +0900
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+X-Mailer: Nate MIME interface v1.0
+X-MailerKey: MTE2LjQ1LjE5MS41
+Content-Transfer-Encoding: base64
+X-Nate-UUID: bb44d9cc67582dac68005746b50cc22b:2
+X-Nate-Key: 9005f1d8a4f477526706f84a1175789c$8bd240fa@mail3.nate.com
+X-TERRACE-SPAMMARK: NOT spam-marked.                              
+  (by Terrace)                                            
+X-TERRACE-PEERIP: 10.234.214.37
+X-TERRACE-SID: 1704815279.445245.139977689859840.mailtx2
+X-TERRACE-CLASSID: Terrace Spam system                                      
+
+PGRpdiBjbGFzcz0id2Nfd3JhcHBlciIgc3R5bGU9ImZvbnQtZmFtaWx5OuunkeydgCDqs6DrlJU7
+Zm9udC1zaXplOjEwcHQiPjxkaXYgaWQ9InB1c2hUYWdfN2QzY2E2NzE2ZmNkMzg5IiBzdHlsZT0i
+cGFkZGluZzowIDAgMHB4IDA7IiBjbGFzcz0iX3djcHVzaFRhZyI+7JWI64WV7ZWY7IS47JqULiBP
+S+yGjO2UhO2KuCDsnoXri4jri6QuPC9kaXY+PGRpdiBpZD0icHVzaFRhZ183ZDNjYTY3MTZmY2Qz
+ODkiIHN0eWxlPSJwYWRkaW5nOjAgMCAwcHggMDsiIGNsYXNzPSJfd2NwdXNoVGFnIj48YnI+PC9k
+aXY+PGRpdiBpZD0icHVzaFRhZ183ZDNjYTY3MTZmY2QzODkiIHN0eWxlPSJwYWRkaW5nOjAgMCAw
+cHggMDsiIGNsYXNzPSJfd2NwdXNoVGFnIj4xLiZuYnNwOzxzcGFuIHN0eWxlPSJmb250LXNpemU6
+IDEwcHQ7Ij7stpTqsIDsmpTssq3tlZjsi5wg6rSA66as7J6QIDxiPuq4iOyVoSDrs4Dqsr3tlZjs
+l6wgPC9iPjwvc3Bhbj48Yj48c3BhbiBzdHlsZT0iZm9udC1zaXplOiAxMHB0OyI+VkI8L3NwYW4+
+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTBwdDsiPkFOSyA8L3NwYW4+PC9iPjxzcGFuIHN0eWxl
+PSJmb250LXNpemU6IDEwcHQ7Ij48Yj7so7zrrLjtlZjquLA8L2I+IOq4sOuKpeydtCDsmYTro4zr
+kJjsl4jsirXri4jri6QuPC9zcGFuPjwvZGl2PjxkaXYgaWQ9InB1c2hUYWdfN2QzY2E2NzE2ZmNk
+Mzg5IiBzdHlsZT0icGFkZGluZzowIDAgMHB4IDA7IiBjbGFzcz0iX3djcHVzaFRhZyI+Jm5ic3A7
+Jm5ic3A7ICZuYnNwO+yatOyYgeyEnOuyhCDrsLDtj6zrkJjslrQg7J6I7Iq164uI64ukLjwvZGl2
+PjxkaXYgaWQ9InB1c2hUYWdfN2QzY2E2NzE2ZmNkMzg5IiBzdHlsZT0icGFkZGluZzowIDAgMHB4
+IDA7IiBjbGFzcz0iX3djcHVzaFRhZyI+PGJyPjwvZGl2PjxkaXYgaWQ9InB1c2hUYWdfN2QzY2E2
+NzE2ZmNkMzg5IiBzdHlsZT0icGFkZGluZzowIDAgMHB4IDA7IiBjbGFzcz0iX3djcHVzaFRhZyI+
+Mi4g7JWE7Jq465+sIO2FjOyKpO2KuCDsgqzsmqnrkJwgPGI+VkJBTksg6riI7JWhIOy3qOyGjOya
+lOyyrTwvYj4g65Oc66a964uI64ukLjwvZGl2PjxkaXYgaWQ9InB1c2hUYWdfN2QzY2E2NzE2ZmNk
+Mzg5IiBzdHlsZT0icGFkZGluZzowIDAgMHB4IDA7IiBjbGFzcz0iX3djcHVzaFRhZyI+Jm5ic3A7
+PC9kaXY+PGRpdiBpZD0icHVzaFRhZ183ZDNjYTY3MTZmY2QzODkiIHN0eWxlPSJwYWRkaW5nOjAg
+MCAwcHggMDsiIGNsYXNzPSJfd2NwdXNoVGFnIj7qsJDsgqztlanri4jri6QuPC9kaXY+PGRpdiBp
+ZD0icHVzaFRhZ183ZDNjYTY3MTZmY2QzODkiIHN0eWxlPSJwYWRkaW5nOjAgMCAwcHggMDsiIGNs
+YXNzPSJfd2NwdXNoVGFnIj48YnI+PC9kaXY+PC9kaXY+PGltZyBzcmM9Imh0dHBzOi8vbWFpbDMu
+bmF0ZS5jb20vYXBwL21zZy9jb25maXJtLz91c249MTIwOTE1MDYmZW1haWw9bWVnYXJvY2szQG5h
+dGUuY29tJmtleT05MDA1ZjFkOGE0ZjQ3NzUyNjcwNmY4NGExMTc1Nzg5YyQ4YmQyNDBmYUBtYWls
+My5uYXRlLmNvbSIgaGVpZ2h0PSIxIiB3aWR0aD0iMSIgYWx0PSIiIC8+
+
+
+

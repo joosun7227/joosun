@@ -1,0 +1,104 @@
+ARC-Seal: i=1; a=rsa-sha256; d=naver.com; s=arc-20180730; t=1704946340;
+	cv=none; b=dlJl7droIndL17hmIQ2K/hO+gVIHSWzYFxWffhj1jxJw1/5Igic5yoWqKvvS
+	 tPUGYzBikYkvpwzK2YA/zig5iH/yxeqxnDrPoeEKO35wGgaQLJRCaJaGWHuR5pDIXlfkaY
+	 iMSAKBSNgJoAUuM6KiArDYjYlR8TkfY0gspj+6A8epE/yilfgr5dfr4Wf3jj7Sgzp4l02t
+	 AC2a0x9p1XvDSZz37or0po1ImMrkpqchOIKUoEOFpDUyclZfr2+MlV4nR4WF3nH8wwXiQs
+	 6ar9Wc+B363/5iUHIhAxUYg3WKdgPJyF0ZlEyH1D0POLI+NafhNm6VmsqF92jWE47BHzrv
+	 yw==
+ARC-Message-Signature: i=1; a=rsa-sha256; d=naver.com; s=arc-20180730;
+	t=1704946340; c=relaxed/relaxed;
+	bh=aAUCRHmVga5/z6NpJLJhBdSTce1zBiJmwfd6bTcwdXY=;
+	h=message-id:from:to:subject:date; b=D+jZA8VLXTYWFA4i3VsXnV0bOL5hSu6gqy
+	 lwkjGN5u/zfKXNEhHDH9drEcU64UXKqcM7gA70fKowWXQTqCk5hsNEwDya0rEfaOUKkE+4
+	 rEshKax5ilRt1yvyHSF2yS6ClAckxJ7+mbZKaXkP1aZ7ivCb5O6+ykmzTQgEweJcOKs1Xw
+	 /+hAhnIDDCwciTTCovdzboxOSGpvh9d6ZRwOva++Dkb0xxl1x/SXlZldo7N2QwSQ3SCfZ6
+	 V/HRlL3R1oTOclYSt5uoHQ76+OsX75rkbcdKRAOHOSunskwaaOVC4+Ez20cLXswgzC4onx
+	 BZD04W7UilErPafmnIgjseyrUIjg==
+ARC-Authentication-Results: i=1; mx.naver.com; 
+  spf=pass (mx.naver.com: domain of junghozin@ok-sft.com designates 121.254.168.190 as permitted sender) smtp.mailfrom=junghozin@ok-sft.com
+Return-Path: <junghozin@ok-sft.com>
+Received-SPF: pass (mx.naver.com: domain of junghozin@ok-sft.com designates 121.254.168.190 as permitted sender)
+  client-ip=121.254.168.190; x-iptype=default;
+Authentication-Results: mx.naver.com;
+  spf=pass (mx.naver.com: domain of junghozin@ok-sft.com designates 121.254.168.190 as permitted sender) smtp.mailfrom=junghozin@ok-sft.com
+X-Naver-ESV: wdFn+6J4p63qMBIYKBwdbXmmFAuZKx0YkXm=
+X-Session-IP: 121.254.168.190
+Received: from smtp227.hiworks.co.kr (smtp190.hiworks.co.kr [121.254.168.190])
+  by crcvmail204.nm.naver.com with ESMTP id uJJS-c0MTH+K++IRHr8mYg
+  for <voliamo2@naver.com>
+  (version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384);
+  Thu, 11 Jan 2024 04:12:19 -0000
+Received: (qmail 89551 invoked from network); 11 Jan 2024 13:12:19 +0900
+Received: from unknown (HELO spam113.gabia.com) (211.43.212.102)
+	by 0 (qmail 1.03 + ejcp v14) with SMTP;
+	11 Jan 2024 13:12:19 +0900
+Received: from unknown (HELO smtp1.hiworks.co.kr) (121.254.168.204)
+	by 211.43.212.102 with ESMTP; 11 Jan 2024 13:12:19 +0900
+X-Original-SENDERIP: 121.254.168.204
+X-Original-SENDERCOUNTRY: KR, Korea, Republic of
+X-Original-MAILFROM: junghozin@ok-sft.com
+X-Original-RCPTTO: voliamo2@naver.com
+Received: (qmail 97878 invoked from network); 11 Jan 2024 13:12:18 +0900
+Received: from unknown (HELO hiworks.co.kr) (192.168.10.218)
+	by 0 (qmail 1.03 + ejcp v14) with SMTP;
+	11 Jan 2024 13:12:18 +0900
+Received: (qmail 88884 invoked from network); 11 Jan 2024 13:12:18 +0900
+Received: from unknown (HELO mailw10) (junghozin@ok-sft.com@117.53.116.201)
+	by 0 (qmail 1.03 + ejcp v14) with AES256-GCM-SHA384 encrypted SMTPS;
+	11 Jan 2024 13:12:18 +0900
+X-Authinfo: HIWORKS SMTP authenticated <junghozin@ok-sft.com|117.53.116.201|junghozin@ok-sft.com|240111131218_445288882>
+X-MailFrom-INFO: Info <country_code:KR|rbl_level:0>
+Message-Id: <da7c11a64ecb0e8695c4f8baa4e04b8b$256b9195@mail3.nate.com>
+From: "=?UTF-8?B?7KCV7Zi47KeE?=" <junghozin@ok-sft.com>
+To: "=?UTF-8?B?7JiI7KO864KY6528KOyjvCk=?=" <voliamo2@naver.com>
+Subject: =?UTF-8?B?W09L7IaM7ZSE7Yq4XSDsnKDsp4Drs7TsiJgg6rOE7JW9IOusuOydmA==?=
+	=?UTF-8?B?7JWI64K0?=
+Date: Thu, 11 Jan 2024 13:12:16 +0900
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+X-Mailer: Nate MIME interface v1.0
+X-MailerKey: MjE4LjE0OC4xMTAuMTA2
+Content-Transfer-Encoding: base64
+X-Nate-UUID: 7b457f3de0c3e36182cf238e94591e23:1
+X-Nate-Key: da7c11a64ecb0e8695c4f8baa4e04b8b$256b9195@mail3.nate.com
+
+PGRpdiBjbGFzcz0id2Nfd3JhcHBlciIgc3R5bGU9ImZvbnQtZmFtaWx5OuunkeydgCDqs6DrlJU7
+Zm9udC1zaXplOjEwcHQiPuyViOuFle2VmOyEuOyalC4gT0vshoztlITtirgg7KCV7Zi47KeE7J6F
+64uI64ukLiZuYnNwOzxkaXY+PGJyPjwvZGl2PjxkaXY+7Jyg7KeA67O07IiY64qUIO2IrOyeheye
+heugpeydmCDqsJzrsJzsi5zqsITsnLzroZwg7JuUIOqzhOyCsOuQmOyWtCDstZzshowgNuqwnOyb
+lOuhnCDqs4Tslb3snbQg7KeE7ZaJ65Cp64uI64ukLiZuYnNwOzwvZGl2PjxkaXY+PGJyPjwvZGl2
+PjxkaXY+7Yis7J6F6rCc67Cc7J6Q7J2YIOyiheulmOuKlCDri6TsnYzqs7wg6rCZ7Iq164uI64uk
+LjwvZGl2PjxkaXY+Jm5ic3A7OiDtlITroaDtirgg6rCc67Cc7J6QIDEg66qFJm5ic3A7KOyblCAz
+MDDrp4zsm5ApPC9kaXY+PGRpdj4mbmJzcDs6IOuwseyVpOuTnCZuYnNwOzxzcGFuIHN0eWxlPSJm
+b250LXNpemU6IDEzLjMzMzNweDsiPjEg66qFPC9zcGFuPjxzcGFuIHN0eWxlPSJmb250LXNpemU6
+IDEzLjMzMzNweDsiPiZuYnNwOzwvc3Bhbj48c3BhbiBzdHlsZT0iZm9udC1zaXplOiAxMy4zMzMz
+cHg7Ij4o7JuUIDMyMCDrp4zsm5ApPC9zcGFuPjwvZGl2PjxkaXY+Jm5ic3A7OiDtkoDsiqTtg50m
+bmJzcDs8c3BhbiBzdHlsZT0iZm9udC1zaXplOiAxMy4zMzMzcHg7Ij4xIOuqhTwvc3Bhbj48c3Bh
+biBzdHlsZT0iZm9udC1zaXplOiAxMy4zMzMzcHg7Ij4mbmJzcDsmbmJzcDs8L3NwYW4+PHNwYW4g
+c3R5bGU9ImZvbnQtc2l6ZTogMTMuMzMzM3B4OyI+KOyblCAzNTAg66eM7JuQKTwvc3Bhbj48c3Bh
+biBzdHlsZT0iZm9udC1zaXplOiAxMHB0OyI+Jm5ic3A7PC9zcGFuPjwvZGl2PjxkaXY+PGJyPjwv
+ZGl2PjxkaXY+7J207KSRIOuLrOuej+ydgCDtkoDsiqTtg53snbQg7ZWE7JqU7ZWp64uI64ukLiZu
+YnNwOyAodmF0IOuzhOuPhCk8L2Rpdj48ZGl2PiZuYnNwOyBBLiZuYnNwOyZuYnNwOzHsnbwgOOyL
+nOqwhCDqt7zrrLTsl5AmbmJzcDvqs7XtnLTsnbwg7KCc7Jm4KOuyoO2KuOuCqOq4sOykgCkg7Jy8
+66GcIOyblCAzNTDrp4zsm5AmbmJzcDs8L2Rpdj48ZGl2PjxzcGFuIHN0eWxlPSJmb250LXNpemU6
+IDEzLjMzMzNweDsiPiZuYnNwOyBCLiZuYnNwOyZuYnNwOzwvc3Bhbj48c3BhbiBzdHlsZT0iZm9u
+dC1zaXplOiAxMy4zMzMzcHg7Ij4x7J28IDTsi5zqsIQg6re866y07JeQJm5ic3A76rO17Zy07J28
+IOygnOyZuCjrsqDtirjrgqjquLDspIApIOycvOuhnCDsm5QgMjAw66eM7JuQPC9zcGFuPjwvZGl2
+PjxkaXY+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTMuMzMzM3B4OyI+Jm5ic3A7IEMmbmJzcDsg
+Jm5ic3A7MeyjvCA47Iuc6rCEIOq3vOustOyXkCDsm5QgNTAg66eM7JuQPC9zcGFuPjwvZGl2Pjxk
+aXY+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTMuMzMzM3B4OyI+PGJyPjwvc3Bhbj48L2Rpdj48
+ZGl2PjxzcGFuIHN0eWxlPSJmb250LXNpemU6IDEzLjMzMzNweDsiPuydmCDruYTsmqnsnbQg7LKt
+6rWs65Cp64uI64ukLiZuYnNwOzwvc3Bhbj48L2Rpdj48ZGl2PjxzcGFuIHN0eWxlPSJmb250LXNp
+emU6IDEzLjMzMzNweDsiPuuztO2GtSDsgqzsnbTtirgg7Jik7ZSI7ZuEIDbqsJzsm5TqsITsnYAg
+QSDroZwg6rOE7JW97J2EIO2VmOyLnOupsCDsnbTtm4QgNuqwnOyblOydgCBC66GcIOqzhOyVvSZu
+YnNwO+q3uO2bhCA26rCc7JuU7J2AIEProZwg6rOE7JW97J2EIOuzgOqyve2VmOyLreuLiOuLpC4m
+bmJzcDs8L3NwYW4+PC9kaXY+PGRpdj7qt7jtm4Qg7IKs7J207Yq46rCAIOyViOygle2ZlCDrkJjq
+s6Ag7LaU6rCA6riw64ql7J20IOyXhuydhOyLnCDsnKDsp4Drs7TsiJgg6rOE7JW97J2EIO2VtOyn
+gO2VmOuKlCDqsr3smrDrj4Qg7J6I7Iq164uI64ukLiZuYnNwOzwvZGl2PjxkaXY+PGJyPjwvZGl2
+PjxkaXY+QSxCLEPspJEg7YOd7ZWY7JesIOyXsOudveyjvOyLnOuptCDqs4Tslb3shJwg7J6R7ISx
+7ZuEIOyghOuLrO2VtCDrk5zrpqzqs5jsirXri4jri6QuPC9kaXY+PGRpdj48YnI+PC9kaXY+PGRp
+dj7qsJDsgqztlanri4jri6Q8L2Rpdj48L2Rpdj48aW1nIHNyYz0iaHR0cHM6Ly9tYWlsMy5uYXRl
+LmNvbS9hcHAvbXNnL2NvbmZpcm0vP3Vzbj0xMjA5MTUwNiZlbWFpbD1tZWdhcm9jazNAbmF0ZS5j
+b20ma2V5PWRhN2MxMWE2NGVjYjBlODY5NWM0ZjhiYWE0ZTA0YjhiJDI1NmI5MTk1QG1haWwzLm5h
+dGUuY29tIiBoZWlnaHQ9IjEiIHdpZHRoPSIxIiBhbHQ9IiIgLz4=
+
